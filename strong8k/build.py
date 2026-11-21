@@ -35,6 +35,9 @@ from urllib.parse import parse_qs, urlencode, urlsplit
 import requests
 from lxml import etree
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import events  # noqa: E402
+
 HERE = Path(__file__).resolve().parent
 UA = os.environ.get("STRONG8K_USER_AGENT") or (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -183,6 +186,10 @@ def read_m3u(path: Path) -> tuple[dict[str, dict], int, str | None]:
                 if not is_vod:
                     tid = pending.get("tvg-id", "").strip()
                     name = pending.get("tvg-name") or pending["_title"]
+                    sid = re.sub(r"\.[a-z0-9]+$", "", path_part.rstrip("/").rsplit("/", 1)[-1])
+                    LIVE_ROWS.append({"sid": sid, "name": pending["_title"] or name,
+                                      "logo": pending.get("tvg-logo") or None, "tid": tid,
+                                      "category": pending.get("group-title", "")})
                     if not tid:
                         without_id += 1
                         note_no_id(pending.get("group-title", ""), name)
@@ -213,6 +220,7 @@ def xtream_login(m3u_url: str):
 
 
 NO_ID: dict[str, dict] = {}   # category -> {"count": n, "sample": [names]}
+LIVE_ROWS: list[dict] = []     # every live entry: sid, name, logo, tid, category (for events)
 
 
 def note_no_id(category: str, name: str):
@@ -256,6 +264,9 @@ def read_player_api(m3u_url: str, tmp: Path) -> tuple[dict[str, dict], int]:
     for st in streams if isinstance(streams, list) else []:
         tid = (st.get("epg_channel_id") or "").strip()
         name = st.get("name") or ""
+        LIVE_ROWS.append({"sid": str(st.get("stream_id") or ""), "name": name,
+                          "logo": st.get("stream_icon") or None, "tid": tid,
+                          "category": cats.get(str(st.get("category_id")), "")})
         if not tid:
             without_id += 1
             note_no_id(cats.get(str(st.get("category_id")), ""), name)
@@ -447,6 +458,47 @@ def write_guide(out: Path, wanted: dict[str, dict], parts: list[tuple[Spool, set
     return kept
 
 
+def take_events(gaps: dict[str, dict], channels: dict[str, dict], spool: Spool,
+                now, lo, hi, hours: float) -> dict:
+    """Event slots: listings from the channel name. Adds no-id slots to channels."""
+    length = dt.timedelta(hours=hours)
+    done: set[str] = set()
+    stats = {"with_event": 0, "no_event": 0, "by_id": 0, "by_stream": 0, "unparsed_sample": []}
+    for row in LIVE_ROWS:
+        tid, sid = row["tid"], row["sid"]
+        if tid and tid not in gaps:
+            continue                       # has a real guide
+        if not tid and not sid:
+            continue
+        cid = tid or f"strong8k-{sid}"
+        if cid in done:
+            continue
+        parsed = events.parse(row["name"], now)
+        if parsed is None:
+            if re.search(r"ppv|event", row["category"], re.I) and \
+                    len(stats["unparsed_sample"]) < 60 and not row["name"].lstrip().startswith("#"):
+                stats["unparsed_sample"].append(row["name"])
+            continue
+        done.add(cid)
+        slot = parsed[0] or f"{row['category'] or 'Event'} {sid}".strip()
+        blocks = events.programmes(parsed, lo, hi, length)
+        for start, stop, title, is_event in blocks:
+            el = etree.Element("programme", start=start.strftime("%Y%m%d%H%M%S %z"),
+                               stop=stop.strftime("%Y%m%d%H%M%S %z"))
+            etree.SubElement(el, "title").text = title
+            if is_event:
+                etree.SubElement(el, "category").text = "Sports"
+            spool.add(cid, el, stop)
+        stats["with_event" if parsed[1] is not events.NO_EVENT and any(b[3] for b in blocks)
+              else "no_event"] += 1
+        if tid:
+            stats["by_id"] += 1
+        else:
+            stats["by_stream"] += 1
+            channels[cid] = {"names": [slot], "logo": row["logo"], "countries": set()}
+    return stats
+
+
 # --------------------------------------------------------------------------- main
 
 def main(argv=None) -> int:
@@ -472,6 +524,8 @@ def main(argv=None) -> int:
         q = parse_qs(u.query)
         mask(u.netloc, *(v[0] for k, v in q.items() if k in ("username", "password")))
 
+    NO_ID.clear()
+    LIVE_ROWS.clear()
     now = dt.datetime.now(dt.timezone.utc)
     lo, hi = now - dt.timedelta(hours=a.past_hours), now + dt.timedelta(days=a.days)
     out = Path(a.out)
@@ -545,6 +599,20 @@ def main(argv=None) -> int:
             report["sources"].append({"name": s["name"], "filled": len(ids),
                                       "filled_ids": {o: got[o] for o in sorted(ids)},
                                       "matched_but_empty": empty})
+
+        if os.environ.get("STRONG8K_EVENTS", "1") != "0":
+            log("Event channels (from channel names)")
+            ev = Spool(tmp / "events.spool")
+            est = take_events(gaps, channels, ev, now, lo, hi,
+                              float(os.environ.get("STRONG8K_EVENT_HOURS", 3)))
+            ev.close()
+            ids = set(ev.count)
+            for c in ids:
+                gaps.pop(c, None)
+            parts.append((ev, ids))
+            log(f"  {est['with_event']} with an event, {est['no_event']} empty "
+                f"({est['by_id']} by guide id, {est['by_stream']} by stream number)")
+            report["events"] = est
 
         # provider programmes for every channel it has, unless a public guide replaced it
         parts.insert(0, (prov, {c for c in prov.count if c not in filled}))
