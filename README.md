@@ -1,5 +1,13 @@
 # EPG-Data
 
+Two guides live here:
+
+- **Adult channels** (below), from filmweb.pl, rebuilt daily.
+- **Strong 8K lineup**, rebuilt every 4 hours: see [`strong8k/README.md`](strong8k/README.md).
+  Guide URL: `https://raw.githubusercontent.com/mavenmarty/EPG-Data/strong8k-guide/guide.xml.gz`
+
+---
+
 XMLTV guide for **adult (18+) channels only**, built from the public TV listings on
 [filmweb.pl](https://www.filmweb.pl/program-tv). It's rebuilt daily by GitHub Actions.
 

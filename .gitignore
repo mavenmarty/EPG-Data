@@ -1,3 +1,5 @@
 __pycache__/
 debug/
 .venv/
+strong8k/out/
+.pytest_cache/

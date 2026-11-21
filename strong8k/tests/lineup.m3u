@@ -1,0 +1,15 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ESPN.us" tvg-name="US| ESPN FHD" tvg-logo="http://l/espn.png" group-title="US| SPORTS",US| ESPN FHD
+http://h/live/u/p/1.ts
+#EXTINF:-1 tvg-id="ESPN.us" tvg-name="US| ESPN 4K" group-title="US| SPORTS",US| ESPN 4K
+http://h/live/u/p/2.ts
+#EXTINF:-1 tvg-id="AMC.us" tvg-name="US| AMC HD" group-title="US| ENT",US| AMC HD
+http://h/live/u/p/3.ts
+#EXTINF:-1 tvg-id="hbo.east" tvg-name="USA: HBO East ᴴᴰ" group-title="USA PREMIUM",USA: HBO East ᴴᴰ
+http://h/live/u/p/4.ts
+#EXTINF:-1 tvg-id="BBCOne.uk" tvg-name="UK| BBC One HD" group-title="UK| ENT",UK| BBC One HD
+http://h/live/u/p/5.ts
+#EXTINF:-1 tvg-id="" tvg-name="US| PPV 1",US| PPV 1
+http://h/live/u/p/6.ts
+#EXTINF:-1 tvg-id="Movie1" tvg-name="Some Movie",Some Movie
+http://h/movie/u/p/7.mp4
