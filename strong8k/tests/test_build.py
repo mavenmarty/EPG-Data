@@ -114,3 +114,7 @@ def test_plain_feed_beats_earlier_plus_one(tmp_path):
     got = build.take_public(tmp_path / "s.xml", "gb", gaps, spool, lo, hi, {})
     spool.close()
     assert got == {"Alibi.uk": "U.and.alibi.HD.uk"}
+
+
+def test_local_call_signs():
+    assert build.name_key("KSDK.us") == build.name_key("KSDK-DT.us_locals1") == "ksdk"

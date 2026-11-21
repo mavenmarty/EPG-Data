@@ -88,7 +88,8 @@ def norm_name(s: str) -> str:
     s = unicodedata.normalize("NFKC", s)
     s = COUNTRY_PREFIX_RE.sub("", s)
     s = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", s)          # SkySpMainEv -> Sky Sp Main Ev
-    s = re.sub(r"\.(us|uk|gb|ca)\d*$", "", s, flags=re.I)
+    s = re.sub(r"\.(us|uk|gb|ca)(_locals)?\d*$", "", s, flags=re.I)
+    s = re.sub(r"\b([KWC][A-Z]{2,3})-(DT|TV|CD|LD)\d*\b", r"\1", s)   # KSDK-DT -> KSDK
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     s = s.replace("&", " and ").replace("+", " plus ")
     s = re.sub(r"[\[(].*?[\])]", " ", s)
