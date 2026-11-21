@@ -385,7 +385,7 @@ def take_public(path: Path, src_country: str | None, gaps: dict[str, dict],
     by_alias = {norm_id(theirs): c for c in gaps for k, theirs in aliases.items()
                 if k == norm_id(c)}
     mapping: dict[str, str] = {}   # their id -> our id
-    used: set[str] = set()
+    used: dict[str, tuple[int, str]] = {}
     seen = set()
     stats["all"] = {}
     for tag, el in iter_xmltv(path):
@@ -398,14 +398,19 @@ def take_public(path: Path, src_country: str | None, gaps: dict[str, dict],
                     ours = by_name.get(name_key(dn))
                     if ours:
                         break
-                if ours:
-                    v = set().union(*(variants(x) for x in labels))
-                    mine = set().union(*(variants(x) for x in gaps[ours]["names"] + [ours]))
-                    if v - mine:
-                        ours = None
-            if ours and ours not in used:
+            penalty = 0
+            if ours:
+                labels = [theirs] + [d.text or "" for d in el.findall("display-name")]
+                v = set().union(*(variants(x) for x in labels))
+                mine = set().union(*(variants(x) for x in gaps[ours]["names"] + [ours]))
+                if v - mine:
+                    ours = None
+                penalty = len(v)
+            if ours and (ours not in used or penalty < used[ours][0]):
+                if ours in used:                # a plain feed beats a +1 / Pacific one
+                    mapping.pop(used[ours][1], None)
                 mapping[theirs] = ours
-                used.add(ours)
+                used[ours] = (penalty, theirs)
         elif tag == "programme":
             ours = mapping.get(el.get("channel") or "")
             if not ours:

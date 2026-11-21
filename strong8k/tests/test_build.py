@@ -100,3 +100,17 @@ def test_timeshift_and_pacific_copies_are_not_used(tmp_path):
     got = build.take_public(tmp_path / "s.xml", None, gaps, spool, lo, hi, {})
     spool.close()
     assert got == {}
+
+
+def test_plain_feed_beats_earlier_plus_one(tmp_path):
+    gaps = {"Alibi.uk": {"names": ["UK| ALIBI", "UK| ALIBI +1"], "logo": None,
+                         "countries": {"gb"}}}
+    (tmp_path / "s.xml").write_text(
+        '<tv><channel id="alibi+1.uk"><display-name>Alibi</display-name></channel>'
+        '<channel id="U.and.alibi.HD.uk"><display-name>U&amp;alibi</display-name></channel>'
+        + progs("alibi+1.uk", 5, "x") + progs("U.and.alibi.HD.uk", 5, "x") + "</tv>")
+    lo, hi = NOW - dt.timedelta(hours=4), NOW + dt.timedelta(days=1)
+    spool = build.Spool(tmp_path / "sp")
+    got = build.take_public(tmp_path / "s.xml", "gb", gaps, spool, lo, hi, {})
+    spool.close()
+    assert got == {"Alibi.uk": "U.and.alibi.HD.uk"}
