@@ -1,6 +1,5 @@
 {
   "_": "Renamed channels: our tvg-id -> channel id in a public guide (sources.json).",
-
   "CBSReality.uk": "CBS.Justice.uk",
   "CrimeInvestigation.uk": "Crime+Inv.HD.uk",
   "SkyCinemaPremiere.uk": "SkyPremiereHD.uk",
@@ -16,7 +15,6 @@
   "AlJazeera.qa": "Al.Jazeera.HD.uk",
   "SkyNewsArabia.sa": "SkyNewsArabia.uk",
   "Euronews.us": "Euronews.uk",
-
   "epix.us": "MGM+.HD.us2",
   "EpixHits.us": "MGM+.Hits.HD.us2",
   "epixdrivein.us": "MGM+.Drive-In.us2",
@@ -28,5 +26,6 @@
   "ATTSportsNetHouston.us": "Space.City.Home.Network.HD.us2",
   "MadisonSquareGarden.us": "MSG.National.us2",
   "MadisonSquareGarden2.us": "MSG2.HD.us2",
-  "NewEnglandSportsNetworkPlus.us": "NESN+.New.England.Sports.Network.Plus.us2"
+  "NewEnglandSportsNetworkPlus.us": "NESN+.New.England.Sports.Network.Plus.us2",
+  "RacingUK.uk": "Racing.TV.HD.uk"
 }

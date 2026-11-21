@@ -46,7 +46,17 @@ ATTR_RE = re.compile(r'([\w-]+)="([^"]*)"')
 COUNTRY_PREFIX_RE = re.compile(
     r"^\s*[\[(]?\s*(US|USA|UK|GB|CA|CAN)\s*[\])]?\s*[:|\-–]\s*", re.I)
 NOISE = {"hd", "fhd", "uhd", "sd", "4k", "8k", "hevc", "h265", "h264", "raw",
-         "backup", "vip", "hq", "lq", "50fps", "60fps", "1080p", "720p", "tv"}
+         "backup", "vip", "hq", "lq", "50fps", "60fps", "1080p", "720p"}
+# public channels that only match ours if ours says the same thing
+VARIANT_RE = {
+    "timeshift": re.compile(r"\+\s?\d|\bplus\s?1\b", re.I),        # Alibi+1
+    "pacific": re.compile(r"pacific|\bwest\b", re.I),               # HBO2 (Pacific)
+    "4k": re.compile(r"4k|uhd|ultra", re.I),                          # Fox Sports 4K
+}
+
+
+def variants(text: str) -> set[str]:
+    return {k for k, r in VARIANT_RE.items() if r.search(text)}
 COUNTRY_ALIASES = {"usa": "us", "uk": "gb", "can": "ca"}
 # short forms used by public guides ("SkySp.Fball", "Cartoon.Netwrk", "Disney.Jr")
 ABBREV = {"sp": "sports", "fball": "football", "netwrk": "network", "net": "network",
@@ -383,10 +393,16 @@ def take_public(path: Path, src_country: str | None, gaps: dict[str, dict],
             theirs = el.get("id") or ""
             ours = by_alias.get(norm_id(theirs)) or by_id.get(norm_id(theirs))
             if not ours:
-                for dn in [theirs] + [d.text or "" for d in el.findall("display-name")]:
+                labels = [theirs] + [d.text or "" for d in el.findall("display-name")]
+                for dn in labels:
                     ours = by_name.get(name_key(dn))
                     if ours:
                         break
+                if ours:
+                    v = set().union(*(variants(x) for x in labels))
+                    mine = set().union(*(variants(x) for x in gaps[ours]["names"] + [ours]))
+                    if v - mine:
+                        ours = None
             if ours and ours not in used:
                 mapping[theirs] = ours
                 used.add(ours)

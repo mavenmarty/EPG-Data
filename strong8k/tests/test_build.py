@@ -86,3 +86,17 @@ def test_public_short_forms_match():
     for ours, theirs in pairs:
         assert build.name_key(ours) == build.name_key(theirs)
     assert build.name_key("NBCSports.us") != build.name_key("NBC.Sports.HD.1.us2")
+
+
+def test_timeshift_and_pacific_copies_are_not_used(tmp_path):
+    gaps = {"Alibi.uk": {"names": ["UK| ALIBI HD"], "logo": None, "countries": {"gb"}},
+            "HBO2.us": {"names": ["US| HBO 2"], "logo": None, "countries": {"us"}}}
+    (tmp_path / "s.xml").write_text(
+        '<tv><channel id="alibi+1.uk"><display-name>Alibi</display-name></channel>'
+        '<channel id="HBO2.(Pacific).us2"><display-name>HBO2</display-name></channel>'
+        + progs("alibi+1.uk", 5, "x") + progs("HBO2.(Pacific).us2", 5, "x") + "</tv>")
+    lo, hi = NOW - dt.timedelta(hours=4), NOW + dt.timedelta(days=1)
+    spool = build.Spool(tmp_path / "sp")
+    got = build.take_public(tmp_path / "s.xml", None, gaps, spool, lo, hi, {})
+    spool.close()
+    assert got == {}
