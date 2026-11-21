@@ -54,6 +54,8 @@ RE_C = re.compile(r"^(?P<head>.*?)\s*\((?P<iso>\d{4}-\d{2}-\d{2} \d{2}:\d{2})(?:
 RE_D = re.compile(
     r"^(?P<title>.+?)\s*@\s*(?P<mon>[A-Za-z]{3})\s+(?P<d>\d{1,2})\s+(?P<hm>\d{1,2}:\d{2})"
     r"\s*(?P<ap>AM|PM)?\s*:(?P<slot>.+)$", re.I)
+# LIVE EVENT 01 - 10am UFC Fight Night …   (time only: today)
+RE_E = re.compile(r"^(?P<slot>LIVE EVENT\s*\d+)\s*-\s*(?P<h>\d{1,2})(?::(?P<m>\d{2}))?\s*(?P<ap>am|pm)\s+(?P<title>.+)$", re.I)
 RE_NOEVENT = re.compile(r"no event|no stream|^\s*:|^\s*#+|\(2098-", re.I)
 RE_SLOT_PREFIX = re.compile(
     r"^\s*(?P<slot>(?:(?:[A-Z]{2}\s*)?\([^)|]{1,30}\)\s*)+)\|\s*(?P<rest>.*)$")
@@ -100,7 +102,7 @@ def _clean(title: str) -> str:
     return title
 
 
-def parse(name: str, now: dt.datetime):
+def parse(name: str, now: dt.datetime, tz=None):
     """Returns (slot, title, start) for an event, (slot, NO_EVENT, None), or None.
     slot is None when the name has no slot label of its own."""
     if not name or not name.strip():
@@ -150,6 +152,15 @@ def parse(name: str, now: dt.datetime):
                         int(iso[11:13]), int(iso[14:16]), EASTERN)
             if start:
                 return (slot.strip() if slot else None), title, start
+
+    m = RE_E.match(n)
+    if m:
+        h, mi = _hm(f"{m['h']}:{m['m'] or '00'}", m["ap"])
+        zone = tz or EASTERN
+        today = now.astimezone(zone).date()
+        start = _at(today.year, today.month, today.day, h, mi, zone)
+        if start:
+            return re.sub(r"\s+", " ", m["slot"]).upper(), _clean(m["title"]), start
 
     m = RE_D.match(n)
     if m:

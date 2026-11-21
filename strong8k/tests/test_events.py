@@ -68,3 +68,10 @@ def test_take_events_ids(tmp_path):
     assert channels["strong8k-2"]["names"] == ["US: ESPN+ PPV 2"]
     assert st["by_id"] == 1 and st["by_stream"] == 1
     build.LIVE_ROWS.clear()
+
+
+def test_time_only_is_today():
+    p = events.parse("LIVE EVENT 01 - 10am UFC Fight Night Prochazka v Stirling", NOW)
+    assert (p[0], p[1], utc(p)) == ("LIVE EVENT 01", "UFC Fight Night Prochazka v Stirling", "11-21 15:00")
+    p = events.parse("LIVE EVENT 05 - 12:30pm Stein v Antonietti", NOW, events.ZONES["UK"])
+    assert utc(p) == "11-21 12:30"

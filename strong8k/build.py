@@ -473,7 +473,8 @@ def take_events(gaps: dict[str, dict], channels: dict[str, dict], spool: Spool,
         cid = tid or f"strong8k-{sid}"
         if cid in done:
             continue
-        parsed = events.parse(row["name"], now)
+        zone = events.ZONES["UK"] if re.match(r"\s*UK\b", row["category"]) else None
+        parsed = events.parse(row["name"], now, zone)
         if parsed is None:
             if re.search(r"ppv|event", row["category"], re.I) and "24/7" not in row["name"] and \
                     len(stats["unparsed_sample"]) < 60 and not row["name"].lstrip().startswith("#"):
