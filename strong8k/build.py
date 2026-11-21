@@ -475,7 +475,7 @@ def take_events(gaps: dict[str, dict], channels: dict[str, dict], spool: Spool,
             continue
         parsed = events.parse(row["name"], now)
         if parsed is None:
-            if re.search(r"ppv|event", row["category"], re.I) and \
+            if re.search(r"ppv|event", row["category"], re.I) and "24/7" not in row["name"] and \
                     len(stats["unparsed_sample"]) < 60 and not row["name"].lstrip().startswith("#"):
                 stats["unparsed_sample"].append(row["name"])
             continue
@@ -622,7 +622,8 @@ def main(argv=None) -> int:
 
         report.update(channels_in_guide=len(kept), channels_without_guide=len(gaps),
                       programmes=total, gz_mb=round(gz.stat().st_size / 1e6, 1),
-                      missing_sample=sorted(gaps)[:200],
+                      missing_sample={c: (channels[c]["names"] or [""])[0]
+                                      for c in sorted(gaps)[:200]},
                       no_tvg_id_by_category=dict(sorted(NO_ID.items(),
                                                         key=lambda kv: -kv[1]["count"])))
         log(f"Guide: {len(kept)} channels, {total} programmes, {report['gz_mb']} MB")
