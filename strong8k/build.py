@@ -100,7 +100,12 @@ def fetch_to_file(src: str, dest: Path, what: str, retries: int = 3) -> Path:
                 with open(dest, "wb") as f:
                     for chunk in r.iter_content(1 << 20):
                         f.write(chunk)
-            log(f"  {what}: {dest.stat().st_size / 1e6:.1f} MB")
+                ctype = r.headers.get("content-type", "?")
+            size = dest.stat().st_size
+            with open(dest, "rb") as f:
+                head = f.read(16)
+            shown = re.sub(rb"[^ -~]", b".", head).decode()
+            log(f"  {what}: HTTP {r.status_code}, {ctype}, {size:,} bytes, starts {shown!r}")
             return dest
         except requests.RequestException as e:
             code = getattr(getattr(e, "response", None), "status_code", None)
@@ -173,6 +178,66 @@ def read_m3u(path: Path) -> tuple[dict[str, dict], int, str | None]:
                             ch["countries"].add(country(m.group(1)))
                 pending = None
     return channels, without_id, header_tvg
+
+
+def xtream_login(m3u_url: str):
+    u = urlsplit(m3u_url)
+    q = parse_qs(u.query)
+    if not (u.path.endswith("get.php") and "username" in q and "password" in q):
+        return None
+    base = f"{u.scheme}://{u.netloc}{u.path[:-len('get.php')]}"
+    return base, {"username": q["username"][0], "password": q["password"][0]}
+
+
+def read_player_api(m3u_url: str, tmp: Path) -> tuple[dict[str, dict], int]:
+    """Same channel list through player_api.php (what TV apps use)."""
+    login = xtream_login(m3u_url)
+    if not login:
+        return {}, 0
+    base, auth = login
+    info_path = fetch_to_file(f"{base}player_api.php?{urlencode(auth)}", tmp / "info.json",
+                              "account info")
+    try:
+        info = json.loads(info_path.read_text("utf-8", "replace")).get("user_info", {})
+        log(f"  account: status={info.get('status')!r}, auth={info.get('auth')!r}, "
+            f"formats={info.get('allowed_output_formats')}, "
+            f"connections={info.get('active_cons')}/{info.get('max_connections')}")
+    except (ValueError, AttributeError):
+        log("  account info isn't JSON")
+    cats = {}
+    try:
+        cp = fetch_to_file(f"{base}player_api.php?{urlencode({**auth, 'action': 'get_live_categories'})}",
+                           tmp / "cats.json", "live categories")
+        cats = {str(c.get("category_id")): c.get("category_name") or ""
+                for c in json.loads(cp.read_text("utf-8", "replace")) or []}
+    except (ValueError, RuntimeError, TypeError):
+        pass
+    sp = fetch_to_file(f"{base}player_api.php?{urlencode({**auth, 'action': 'get_live_streams'})}",
+                       tmp / "live.json", "live channels")
+    try:
+        streams = json.loads(sp.read_text("utf-8", "replace"))
+    except ValueError:
+        return {}, 0
+    channels: dict[str, dict] = {}
+    without_id = 0
+    for st in streams if isinstance(streams, list) else []:
+        tid = (st.get("epg_channel_id") or "").strip()
+        name = st.get("name") or ""
+        if not tid:
+            without_id += 1
+            continue
+        ch = channels.setdefault(tid, {"names": [], "logo": None, "countries": set()})
+        if name and name not in ch["names"]:
+            ch["names"].append(name)
+        ch["logo"] = ch["logo"] or st.get("stream_icon") or None
+        for text in (name, cats.get(str(st.get("category_id")), "")):
+            m = COUNTRY_PREFIX_RE.match(text)
+            if m:
+                ch["countries"].add(country(m.group(1)))
+        m = re.search(r"\.([a-z]{2})$", tid, re.I)
+        if m:
+            ch["countries"].add(country(m.group(1)))
+    return channels, without_id
 
 
 # --------------------------------------------------------------------------- xmltv
@@ -340,7 +405,7 @@ def main(argv=None) -> int:
                     help="refuse to publish if programmes drop below this share of last run")
     a = ap.parse_args(argv)
 
-    m3u_src = a.m3u or os.environ.get("STRONG8K_M3U_URL")
+    m3u_src = (a.m3u or os.environ.get("STRONG8K_M3U_URL") or "").strip()
     if not m3u_src:
         log("Set STRONG8K_M3U_URL (or pass --m3u).")
         return 2
@@ -359,6 +424,10 @@ def main(argv=None) -> int:
     try:
         log("Channel list")
         channels, without_id, header_tvg = read_m3u(fetch_to_file(m3u_src, tmp / "list.m3u", "M3U"))
+        if not channels and m3u_src.startswith("http"):
+            log("  M3U has no usable channels; trying player_api.php")
+            channels, without_id = read_player_api(m3u_src, tmp)
+            report["channel_list_from"] = "player_api"
         if not channels:
             log("No live channels with a tvg-id in the M3U. Nothing to build.")
             return 1
