@@ -25,13 +25,18 @@ no renaming.
    US locals, Canada, UK). Matching is by id, then by name with quality tags (HD, FHD,
    4K…) and country prefixes (`US|`, `UK:`…) removed. A channel marked for one country
    is never matched against another country's guide.
-4. **Event channels:** PPV/event slots (ESPN+, Flo, DAZN, BTN+, NCAAB…) get listings
+4. **Adult channels:** entries in an adult category (or named `ADULT: …`) that have no
+   guide are matched by name to the Filmweb adult guide in `public/guide.xml.gz`
+   ("ADULT: BRAZZERS TV" → Brazzers TV Europe). Without a `tvg-id` they're listed as
+   `strong8k-<stream number>` under the provider's channel name. `report.json` → `adult`
+   lists what matched and what didn't.
+5. **Event channels:** PPV/event slots (ESPN+, Flo, DAZN, BTN+, NCAAB…) get listings
    built from the channel's own name ("Next: …", the event, "Ended: …", or "No event
    scheduled"). Times without a zone are US Eastern; events are 3 hours long
    (`STRONG8K_EVENT_HOURS`; `STRONG8K_EVENTS=0` turns this off). A slot with a `tvg-id`
    uses it; a slot without one is listed as `strong8k-<stream number>`, named after the
    slot (e.g. "US: ESPN+ PPV 2"), so a player can match it by hand or by name.
-5. **Window:** 4 hours back to 3 days ahead. Change it with the repository variable
+6. **Window:** 4 hours back to 3 days ahead. Change it with the repository variable
    `STRONG8K_DAYS`.
 
 The result is published to the `strong8k-guide` branch, replaced on every run so the

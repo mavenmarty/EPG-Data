@@ -471,9 +471,9 @@ def take_events(gaps: dict[str, dict], channels: dict[str, dict], spool: Spool,
         if not tid and not sid:
             continue
         cid = tid or f"strong8k-{sid}"
-        if cid in done:
+        if cid in done or (not tid and cid in channels):   # already listed (adult)
             continue
-        zone = events.ZONES["UK"] if re.match(r"\s*UK\b", row["category"]) else None
+        zone =events.ZONES["UK"] if re.match(r"\s*UK\b", row["category"]) else None
         parsed = events.parse(row["name"], now, zone)
         if parsed is None:
             if re.search(r"ppv|event", row["category"], re.I) and "24/7" not in row["name"] and \
@@ -500,6 +500,70 @@ def take_events(gaps: dict[str, dict], channels: dict[str, dict], spool: Spool,
     return stats
 
 
+# --------------------------------------------------------------------------- adult
+
+ADULT_CAT_RE = re.compile(r"adult|xxx|18\s*\+|erotic", re.I)
+ADULT_PREFIX_RE = re.compile(r"^\s*(adult|xxx|18\s*\+)\s*[:|\-–]\s*", re.I)
+ADULT_FILLER = ("europe", "channel", "tv")
+
+
+def adult_keys(name: str) -> list[str]:
+    """'ADULT: BRAZZERS TV ᴿᴬᵂ' -> ['brazzerstv', 'brazzers'] (most specific first)."""
+    words = norm_name(ADULT_PREFIX_RE.sub("", unicodedata.normalize("NFKC", name))).split()
+    keys = ["".join(words)]
+    trimmed = [w for w in words if w not in ADULT_FILLER]
+    if trimmed and "".join(trimmed) not in keys:
+        keys.append("".join(trimmed))
+    return [k for k in keys if k]
+
+
+def take_adult(path: Path, gaps: dict[str, dict], channels: dict[str, dict],
+               spool: Spool, lo, hi) -> dict:
+    """Adult rows (category or 'ADULT:' prefix) matched by name to the Filmweb guide."""
+    stats: dict = {"matched": {}, "unmatched": []}
+    exact: dict[str, str] = {}
+    loose: dict[str, str | None] = {}
+    names: dict[str, str] = {}
+    progs: dict[str, list] = {}
+    for tag, el in iter_xmltv(path):
+        if tag == "channel":
+            fid, dn = el.get("id") or "", el.findtext("display-name") or ""
+            names[fid] = dn
+            keys = adult_keys(dn)
+            exact.setdefault(keys[0], fid)
+            for k in keys[1:]:
+                loose[k] = None if loose.get(k, fid) != fid else fid   # ambiguous -> None
+        elif tag == "programme":
+            stop = in_window(el, lo, hi)
+            if stop is not None:
+                progs.setdefault(el.get("channel") or "", []).append(
+                    (etree.tostring(el), stop))
+    done: set[str] = set()
+    for row in LIVE_ROWS:
+        tid, sid, name = row["tid"], row["sid"], row["name"]
+        if not (ADULT_CAT_RE.search(row["category"]) or ADULT_PREFIX_RE.match(name)):
+            continue
+        if name.lstrip().startswith("#") or (tid and tid not in gaps) or not (tid or sid):
+            continue
+        cid = tid or f"strong8k-{sid}"
+        if cid in done:
+            continue
+        keys = adult_keys(name)
+        fid = next((exact[k] for k in keys if k in exact), None) or \
+            next((loose[k] for k in keys if loose.get(k)), None)
+        if not fid or not progs.get(fid):
+            if len(stats["unmatched"]) < 300:
+                stats["unmatched"].append(name)
+            continue
+        done.add(cid)
+        for xml, stop in progs[fid]:
+            spool.add(cid, etree.fromstring(xml), stop)
+        stats["matched"][name] = names[fid]
+        if not tid:
+            channels[cid] = {"names": [name], "logo": row["logo"], "countries": set()}
+    return stats
+
+
 # --------------------------------------------------------------------------- main
 
 def main(argv=None) -> int:
@@ -511,6 +575,8 @@ def main(argv=None) -> int:
     ap.add_argument("--days", type=float, default=float(os.environ.get("STRONG8K_DAYS", 3)))
     ap.add_argument("--past-hours", type=float, default=4)
     ap.add_argument("--out", default=str(HERE / "out"))
+    ap.add_argument("--adult", default=str(HERE.parent / "public" / "guide.xml.gz"),
+                    help="Filmweb adult guide to match adult channels against by name")
     ap.add_argument("--previous-report", help="report.json of the last run (outage guard)")
     ap.add_argument("--min-ratio", type=float, default=0.5,
                     help="refuse to publish if programmes drop below this share of last run")
@@ -600,6 +666,19 @@ def main(argv=None) -> int:
             report["sources"].append({"name": s["name"], "filled": len(ids),
                                       "filled_ids": {o: got[o] for o in sorted(ids)},
                                       "matched_but_empty": empty})
+
+        adult_src = Path(a.adult)
+        if adult_src.exists():
+            log("Adult channels (Filmweb guide, by name)")
+            ad = Spool(tmp / "adult.spool")
+            ast = take_adult(adult_src, gaps, channels, ad, lo, hi)
+            ad.close()
+            ids = set(ad.count)
+            for c in ids:
+                gaps.pop(c, None)
+            parts.append((ad, ids))
+            log(f"  matched {len(ast['matched'])}, unmatched {len(ast['unmatched'])}")
+            report["adult"] = ast
 
         if os.environ.get("STRONG8K_EVENTS", "1") != "0":
             log("Event channels (from channel names)")

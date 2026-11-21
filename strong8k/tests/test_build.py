@@ -118,3 +118,33 @@ def test_plain_feed_beats_earlier_plus_one(tmp_path):
 
 def test_local_call_signs():
     assert build.name_key("KSDK.us") == build.name_key("KSDK-DT.us_locals1") == "ksdk"
+
+
+def test_adult_channels_matched_by_name(tmp_path):
+    tv = lambda body: f'<?xml version="1.0"?><tv>{body}</tv>'
+    (tmp_path / "adult.xml").write_text(tv(
+        '<channel id="BrazzersTVEurope.eu"><display-name>Brazzers TV Europe</display-name></channel>'
+        '<channel id="HustlerTV.eu"><display-name>Hustler TV</display-name></channel>'
+        '<channel id="HustlerHD.eu"><display-name>Hustler HD</display-name></channel>'
+        + progs("BrazzersTVEurope.eu", 24, "b") + progs("HustlerTV.eu", 24, "h")
+        + progs("HustlerHD.eu", 24, "hd")))
+    build.LIVE_ROWS[:] = [
+        {"sid": "1", "name": "####### ADULT ᴿᴬᵂ #######", "logo": None, "tid": "", "category": "FOR ADULTS"},
+        {"sid": "2", "name": "ADULT: BRAZZERS TV ᴿᴬᵂ", "logo": None, "tid": "", "category": "FOR ADULTS"},
+        {"sid": "3", "name": "ADULT: HUSTLER TV ᴴᴰ", "logo": None, "tid": "", "category": "FOR ADULTS"},
+        {"sid": "4", "name": "ADULT: EROTIC 2 ᴿᴬᵂ", "logo": None, "tid": "", "category": "FOR ADULTS"},
+        {"sid": "5", "name": "Private Eyes", "logo": None, "tid": "", "category": "US| DRAMA"},
+    ]
+    channels, gaps = {}, {}
+    sp = build.Spool(tmp_path / "a.spool")
+    st = build.take_adult(tmp_path / "adult.xml", gaps, channels, sp,
+                          NOW - dt.timedelta(hours=4), NOW + dt.timedelta(days=3))
+    sp.close()
+    assert st["matched"] == {"ADULT: BRAZZERS TV ᴿᴬᵂ": "Brazzers TV Europe",
+                             "ADULT: HUSTLER TV ᴴᴰ": "Hustler TV"}
+    assert st["unmatched"] == ["ADULT: EROTIC 2 ᴿᴬᵂ"]
+    assert set(sp.count) == {"strong8k-2", "strong8k-3"}
+    assert channels["strong8k-2"]["names"] == ["ADULT: BRAZZERS TV ᴿᴬᵂ"]
+    line = (tmp_path / "a.spool").read_bytes().split(b"\n")[0]
+    assert b'channel="strong8k-2"' in line
+    build.LIVE_ROWS.clear()
