@@ -1,0 +1,2599 @@
+{
+  "built_utc": "2026-11-21T15:43:33Z",
+  "days": 3.0,
+  "channel_list_from": "player_api",
+  "guide_ids": 943,
+  "live_entries_without_tvg_id": 16362,
+  "provider_channels": 669,
+  "provider_short": 113,
+  "sources": [
+    {
+      "name": "epgshare01 US",
+      "filled": 22,
+      "filled_ids": {
+        "ATTSportsNetHouston.us": "Space.City.Home.Network.HD.us2",
+        "ATTSportsNetPittsburgh.us": "SportsNet.Pittsburgh.HD.us2",
+        "ActionMax.us": "ActionMAX.HD.us2",
+        "CheddarBusiness.us": "Cheddar.us2",
+        "EpixHits.us": "MGM+.Hits.HD.us2",
+        "FX.us": "FX.HD.us2",
+        "FoxBusiness.us": "Fox.Business.HD.us2",
+        "FoxNews.us": "Fox.News.Channel.HD.us2",
+        "GolTVEnglish.us": "GOL.TV.us2",
+        "HBO2.us": "HBO2.HD.us2",
+        "HBOZone.us": "HBO.Zone.HD.us2",
+        "HallmarkDrama.us": "Hallmark.Family.us2",
+        "MadisonSquareGarden.us": "MSG.National.us2",
+        "MadisonSquareGarden2.us": "MSG2.HD.us2",
+        "MadisonSquareGardenPlus.us": "MSG.Plus.us2",
+        "NewEnglandSportsNetwork.us": "New.England.Sports.Network.HD.us2",
+        "NewEnglandSportsNetworkPlus.us": "NESN+.New.England.Sports.Network.Plus.us2",
+        "SonyMovieChannel.us": "Sony.Movie.Channel.HD.us2",
+        "WWE.us": "WWE.Network.us2",
+        "epix.us": "MGM+.HD.us2",
+        "epixdrivein.us": "MGM+.Drive-In.us2",
+        "showtimewest.us": "Paramount+.with.Showtime.HD.(Pacific).us2"
+      },
+      "matched_but_empty": {}
+    },
+    {
+      "name": "epgshare01 US sports",
+      "filled": 0,
+      "filled_ids": {},
+      "matched_but_empty": {}
+    },
+    {
+      "name": "epgshare01 US locals",
+      "filled": 3,
+      "filled_ids": {
+        "KSDK.us": "KSDK-DT.us_locals1",
+        "KTVI.us": "KTVI-DT.us_locals1",
+        "KTVT.us": "KTVT-DT.us_locals1"
+      },
+      "matched_but_empty": {}
+    },
+    {
+      "name": "epgshare01 Canada",
+      "filled": 2,
+      "filled_ids": {
+        "NatGeoWild.ca": "WILD.TV.ca2",
+        "WNetwork.ca": "W.Network.HD.ca2"
+      },
+      "matched_but_empty": {}
+    },
+    {
+      "name": "epgshare01 UK",
+      "filled": 58,
+      "filled_ids": {
+        "4Seven.uk": "4seven.uk",
+        "AlJazeera.qa": "Al.Jazeera.HD.uk",
+        "Alibi.uk": "U.and.alibi.HD.uk",
+        "Boomerang.uk": "Boomerang.HD.uk",
+        "CBSReality.uk": "CBS.Justice.uk",
+        "CartoonNetwork.uk": "Cartoon.Net.HD.uk",
+        "ComedyCentral.uk": "ComedyCentral.uk",
+        "CrimeInvestigation.uk": "Crime+Inv.HD.uk",
+        "Dave.uk": "U.and.Dave.HD.uk",
+        "DisneyJunior.uk": "Disney.Jr.HD.uk",
+        "Drama.uk": "U.and.Drama.uk",
+        "Eden.uk": "U.and.Eden.uk",
+        "Euronews.us": "Euronews.uk",
+        "GOLD.uk": "U.and.GOLD.HD.uk",
+        "HighStreet4.uk": "High.Street.TV.4.uk",
+        "ITV1.uk": "ITV1.HD.uk",
+        "ITV3.uk": "ITV3.HD.uk",
+        "NickJunior.uk": "Nick.Jr..HD.uk",
+        "Nickelodeon.uk": "NickelodeonHD.uk",
+        "Now90s.uk": "NOW.90s.uk",
+        "RacingUK.uk": "Racing.TV.HD.uk",
+        "SkyArts.uk": "Sky.Arts.HD.uk",
+        "SkyAtlantic.uk": "Sky.Atlantic.HD.uk",
+        "SkyCinemaFamily.uk": "Sky.Family.HD.uk",
+        "SkyCinemaPremiere.uk": "SkyPremiereHD.uk",
+        "SkyCinemaSciFiHorror.uk": "Sky.ScFi/HorHD.uk",
+        "SkyCinemaThriller.uk": "Sky.Thriller.HD.uk",
+        "SkyComedy.uk": "Sky.Comedy.HD.uk",
+        "SkyCrime.uk": "Sky.Crime.HD.uk",
+        "SkyDocumentaries.uk": "Sky.Documentaries.HD.uk",
+        "SkyKids.uk": "Sky.Kids.HD.uk",
+        "SkyNature.uk": "Sky.Nature.HD.uk",
+        "SkyNewsArabia.sa": "SkyNewsArabia.uk",
+        "SkySportsArena.uk": "SkySp+.uk",
+        "SkyWitness.uk": "Sky.Witness.HD.uk",
+        "TNTSport1.uk": "TNT.Sports.1.HD.uk",
+        "TNTSport2.uk": "TNT.Sports.2.HD.uk",
+        "TNTSport3.uk": "TNT.Sports.3.HD.uk",
+        "TNTSport4.uk": "TNT.Sports.4.HD.uk",
+        "ViaplaySports1.uk": "Premier.Sports.1.HD.uk",
+        "ViaplaySports2.uk": "Premier.Sports.2.HD.uk",
+        "W.uk": "U.and.W.HD.uk",
+        "Yesterday.uk": "U.and.YESTERDAY.uk",
+        "bbc1.uk": "BBC.One.Lon.HD.uk",
+        "itv2.uk": "ITV2.HD.uk",
+        "skyaction.uk": "Sky.Action.HD.uk",
+        "skysports1uhd.uk": "Sky.Sports.Ultra.HD.1.uk",
+        "skysports2uhd.uk": "Sky.Sports.Ultra.HD.2.uk",
+        "skysportsaction.uk": "SkySp.ActionHD.uk",
+        "skysportscricket.uk": "SkySp.Cricket.uk",
+        "skysportsf1.uk": "SkySp.F1.uk",
+        "skysportsfootball.uk": "SkySp.Fball.HD.uk",
+        "skysportsgolf.uk": "SkySp.Golf.uk",
+        "skysportsmainevent.uk": "SkySpMainEvHD.uk",
+        "skysportsmix.uk": "SkySp.Mix.HD.uk",
+        "skysportsnews.uk": "SkySp.News.HD.uk",
+        "skysportspremiereleague.uk": "SkySp.PL.HD.uk",
+        "skysportstennis.uk": "SkySp.Tennis.HD.uk"
+      },
+      "matched_but_empty": {
+        "POPMax.uk": "POP.Max.uk (0 programmes, none in window)",
+        "IdealWorld.uk": "Ideal.World.HD.uk (0 programmes, none in window)",
+        "SkyReplay.uk": "Sky.Replay.uk (0 programmes, none in window)",
+        "skysportsracing.uk": "SkySp.Racing.uk (0 programmes, none in window)",
+        "CITV.uk": "CITV.uk (0 programmes, none in window)",
+        "CourtTV.uk": "Court.TV.uk (0 programmes, none in window)",
+        "CreateCraft.uk": "Create.and.CraftHD.uk (0 programmes, none in window)",
+        "HGTV.uk": "HGTV.uk (0 programmes, none in window)",
+        "CraftExtra.uk": "Craft.Extra.uk (0 programmes, none in window)"
+      }
+    }
+  ],
+  "adult": {
+    "matched": {
+      "ADULT: PLAYBOY TV \u1d3f\u1d2c\u1d42": "Playboy TV",
+      "ADULT: DORCEL \u1d3f\u1d2c\u1d42": "Dorcel TV",
+      "ADULT: HUSTLER \u1d3f\u1d2c\u1d42": "Hustler HD",
+      "ADULT: PRIVATE \u1d3f\u1d2c\u1d42": "Private TV",
+      "ADULT: VIVID TOUCH \u1d3f\u1d2c\u1d42": "Vivid Touch",
+      "ADULT: VIVID RED \u1d3f\u1d2c\u1d42": "Vivid Red HD",
+      "ADULT: REALITY KINGS \u1d3f\u1d2c\u1d42": "Reality Kings TV",
+      "ADULT: BARELY LEGAL TV \u1d3f\u1d2c\u1d42": "Barely Legal TV",
+      "ADULT: BARELY LEGAL TV (S) \u1d3f\u1d2c\u1d42": "Barely Legal TV",
+      "ADULT: DORCEL TV \u1d3f\u1d2c\u1d42": "Dorcel TV",
+      "ADULT: DORCEL TV XXX (H) \u1d3f\u1d2c\u1d42": "Dorcel XXX",
+      "ADULT: HUSTLER TV \u1d3f\u1d2c\u1d42": "Hustler TV",
+      "ADULT: REDLIGHT TV \u1d3f\u1d2c\u1d42": "Redlight",
+      "ADULT: BEATE UHSE TV \u1d3f\u1d2c\u1d42": "Beate-Uhse.TV"
+    },
+    "unmatched": [
+      "ADULT: EROTIC \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 2 \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 3 \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 4 \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 5 \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 6 \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 7 \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 8 \u1d3f\u1d2c\u1d42",
+      "ADULT: EXTREM DE \u1d3f\u1d2c\u1d42",
+      "ADULT: HOT PLEASURE \u1d3f\u1d2c\u1d42",
+      "ADULT: BALKAN EROTIC \u1d3f\u1d2c\u1d42",
+      "ADULT: SPICE \u1d3f\u1d2c\u1d42",
+      "ADULT: SUPERONE \u1d3f\u1d2c\u1d42",
+      "ADULT: FREE X \u1d3f\u1d2c\u1d42",
+      "ADULT: DUSK TV \u1d3f\u1d2c\u1d42",
+      "ADULT: SATISFACTION ITALY \u1d3f\u1d2c\u1d42",
+      "ADULT: SEXATION \u1d3f\u1d2c\u1d42",
+      "ADULT: CENTOXCENTO \u1d3f\u1d2c\u1d42",
+      "ADULT: HOT XXL \u1d3f\u1d2c\u1d42",
+      "ADULT: PASSION XXX \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG ASS \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG DICK \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG TITS \u1d3f\u1d2c\u1d42",
+      "ADULT: BLOWJOB \u1d3f\u1d2c\u1d42",
+      "ADULT: CUCKLOLD \u1d3f\u1d2c\u1d42",
+      "ADULT: FETISH \u1d3f\u1d2c\u1d42",
+      "ADULT: HARDCORE \u1d3f\u1d2c\u1d42",
+      "ADULT: INTERRACIAL \u1d3f\u1d2c\u1d42",
+      "ADULT: LATINO \u1d3f\u1d2c\u1d42",
+      "ADULT: LESBIAN \u1d3f\u1d2c\u1d42",
+      "ADULT: POV \u1d3f\u1d2c\u1d42",
+      "ADULT: PORNSTARS \u1d3f\u1d2c\u1d42",
+      "ADULT: RUSSIAN \u1d3f\u1d2c\u1d42",
+      "ADULT: TEEN \u1d3f\u1d2c\u1d42",
+      "ADULT: THREESOME \u1d3f\u1d2c\u1d42",
+      "ADULT: WHIPPED ASS \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 1 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 2 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 3 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 5 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 6 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 7 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 8 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 9 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 10 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 11 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 12 \u1d3f\u1d2c\u1d42",
+      "ADULT: TINY 13 \u1d3f\u1d2c\u1d42",
+      "ADULT: WANK ZONE 34 \u1d3f\u1d2c\u1d42",
+      "ADULT: WANK ZONE 59 \u1d3f\u1d2c\u1d42",
+      "ADULT: FAPADOO \u1d3f\u1d2c\u1d42",
+      "ADULT: ADULT TINY4K 3 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: ALBA XXX 2 (H) \u1d3f\u1d2c\u1d42",
+      "ADULT: ANAL TV \u1d3f\u1d2c\u1d42",
+      "ADULT: ASIAN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV ANAL \u1d3f\u1d2c\u1d42",
+      "ADULT: ROUGH \u1d3f\u1d2c\u1d42",
+      "ADULT: GAY \u1d3f\u1d2c\u1d42",
+      "ADULT: ALBA XXX 6 \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG ASS \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG ASS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG DICK TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BIG TITS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BIZARRE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BLONDE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BLOWJOB TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BLOWJOB TV \u1d3f\u1d2c\u1d42",
+      "ADULT: ALBA XXX 5 \u1d3f\u1d2c\u1d42",
+      "ADULT: FIT 18 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BRUNETTE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: ALBA XXX 3 \u1d3f\u1d2c\u1d42",
+      "ADULT: CASUAL TEEN SEX 1 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: CENTO X CENTO (H) \u1d3f\u1d2c\u1d42",
+      "ADULT: COMPILATION TV \u1d3f\u1d2c\u1d42",
+      "ADULT: CUCKOLD TV \u1d3f\u1d2c\u1d42",
+      "ADULT: GANGBANG TV \u1d3f\u1d2c\u1d42",
+      "ADULT: CZECH \u1d3f\u1d2c\u1d42",
+      "ADULT: TEEN DREAMS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: DICK DRAINERS \u1d3f\u1d2c\u1d42",
+      "ADULT: DUSK TV \u1d3f\u1d2c\u1d42",
+      "ADULT: EROTIC 3 \u1d3f\u1d2c\u1d42",
+      "ADULT: EXTASY TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV COMPILATION TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV COMPILATION TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV LESBIAN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV LESBIAN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FETISH TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FLIXBLONDE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FETISH TV \u1d3f\u1d2c\u1d42",
+      "ADULT: GANGBANG TV \u1d3f\u1d2c\u1d42",
+      "ADULT: HARDCORE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: HOT TV \u1d3f\u1d2c\u1d42",
+      "ADULT: HOT TV \u1d3f\u1d2c\u1d42",
+      "ADULT: HOTCLUB 9 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: IFLIXHARDCORE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: INTERRACIAL TV \u1d3f\u1d2c\u1d42",
+      "ADULT: LATINA TV \u1d3f\u1d2c\u1d42",
+      "ADULT: LESBIAN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: LIVE CAMS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: MEIDEN VAN HOLLAND \u1d3f\u1d2c\u1d42",
+      "ADULT: MIA KHALIFA \u1d3f\u1d2c\u1d42",
+      "ADULT: MILF TV \u1d3f\u1d2c\u1d42",
+      "ADULT: MILF TV \u1d3f\u1d2c\u1d42",
+      "ADULT: N1 ADULT - BLACKED \u1d3f\u1d2c\u1d42",
+      "ADULT: N1 BLACKED 3 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: N1 BLACKED 5 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: NET VIDEO GIRLS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: IFLIXBLONDE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV 4 \u1d3f\u1d2c\u1d42",
+      "ADULT: PASSIE 4K+ \u1d3f\u1d2c\u1d42",
+      "ADULT: BLACK OF BLONDES 2 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: PENTHOUSE 2 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: BLACK OF BLONDES 1 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: PINK EROTIC 2 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: PINK EROTIC 4 (H) \u1d3f\u1d2c\u1d42",
+      "ADULT: PINK EROTIC 5 TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV 3 \u1d3f\u1d2c\u1d42",
+      "ADULT: PORN 2 \u1d3f\u1d2c\u1d42",
+      "ADULT: PORN 6 \u1d3f\u1d2c\u1d42",
+      "ADULT: PORN 8 \u1d3f\u1d2c\u1d42",
+      "ADULT: PORNSTAR TV \u1d3f\u1d2c\u1d42",
+      "ADULT: POV TV \u1d3f\u1d2c\u1d42",
+      "ADULT: PUBLICK AGENT TV \u1d3f\u1d2c\u1d42",
+      "ADULT: RUSSIAN GIRLS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: ROUGE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: RUSSIAN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: SECRET CIRCLE TV (S) \u1d3f\u1d2c\u1d42",
+      "ADULT: SEX ATION TV (H) \u1d3f\u1d2c\u1d42",
+      "ADULT: SEXY MIC LICKING ADULTS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: SEXY MIC LICKING TV \u1d3f\u1d2c\u1d42",
+      "ADULT: SKYE BLUE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: FAP TV 2 \u1d3f\u1d2c\u1d42",
+      "ADULT: TABOO TV (H) \u1d3f\u1d2c\u1d42",
+      "ADULT: TEEN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: TEENS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: THREESOME \u1d3f\u1d2c\u1d42",
+      "ADULT: THREESOME TV \u1d3f\u1d2c\u1d42",
+      "ADULT: VENUS TV \u1d3f\u1d2c\u1d42",
+      "ADULT: VISIT-X TV \u1d3f\u1d2c\u1d42",
+      "ADULT: VIVID \u1d3f\u1d2c\u1d42",
+      "ADULT: WOMAN TV \u1d3f\u1d2c\u1d42",
+      "ADULT: X1-BIZARRE TV \u1d3f\u1d2c\u1d42",
+      "ADULT: XTASY \u1d3f\u1d2c\u1d42",
+      "ADULT: XXL (H) \u1d3f\u1d2c\u1d42",
+      "ADULT: CENTOXCENTO TV \u1d3f\u1d2c\u1d42",
+      "ADULT: ALBA XXX 4 \u1d3f\u1d2c\u1d42"
+    ]
+  },
+  "events": {
+    "with_event": 2320,
+    "no_event": 3043,
+    "by_id": 0,
+    "by_stream": 5363,
+    "unparsed_sample": [
+      "US: THE MASTERS - HOLES 4, 5 & 6 (FIRST ROUND)",
+      "US: THE MASTERS - CBS COVERAGE",
+      "US: THE MASTERS - SKY NEW ZEALAND",
+      "US: THE MASTERS - SKY GOLF",
+      "US: THE MASTERS - FEATURED GROUPS (FIRST ROUND)",
+      "US: THE MASTERS - AMEN CORNER (FIRST ROUND)",
+      "US: THE MASTERS - HOLES 15 & 16 (FIRST ROUND)",
+      "US: BOX OFFICE HD",
+      "US: BOX OFFICE SD",
+      "US: BOX OFFICE HEVC",
+      "US: BOX OFFICE 4K",
+      "US: TNT SPORTS BOX OFFICE HD",
+      "US: TNT SPORTS BOX OFFICE SD",
+      "US: TNT SPORTS BOX OFFICE HEVC",
+      "US: TNT SPORTS BOX OFFICE 4K",
+      "Boxing 1 | BKb 61 7PM",
+      "Boxing 2 | BKb 61 7PM",
+      "Boxing 3 | Canelo vs Mbilli     UK 2:00pm",
+      "Boxing 4  | Canelo vs Mbilli UK 2:00pm",
+      "Boxing  05  :  Canelo vs Mbilli UK 2:00pm",
+      "Boxing 6: Canelo vs Mbilli UK 2:00pm",
+      "Boxing 7: Jake Paul vs Anthony Joshua",
+      "Boxing 8: Jake Paul vs Anthony Joshua",
+      "LIVE EVENT 26 - MAIN STAGE Live From Coachella 2026",
+      "LIVE EVENT 27 - FREEDOM STAGE Tomorrowland 2026",
+      "LIVE EVENT 28 - ONE WORLD RADIO Live from Tomorrowland 2026",
+      "LIVE EVENT 29 - MAINSTAGE SHORTS Tomorrowland 2026",
+      "LIVE EVENT 30 - FREEDOM STAGE SHORTS Tomorrowland 2026",
+      "LIVE EVENT 31 - GOBI Live From Coachella 2026",
+      "LIVE EVENT 32 - QUASAR Live From Coachella 2026",
+      "LIVE EVENT 33 -",
+      "LIVE EVENT 34 -",
+      "PPV EVENT 01: PRELIMS UFC FN (11.21 10:00 AM ET)",
+      "PPV EVENT 02: PRELIMS UFC FN (11.21 10:00 AM ET)",
+      "PPV EVENT 03: UFC FN Prochazka vs. Stirling (11.21 1:00 PM ET)",
+      "PPV EVENT 04: UFC FN Prochazka vs. Stirling (11.21 1:00 PM ET)",
+      "PPV EVENT 05: UFC Post Fight Conference (11.21 4:15 PM ET)",
+      "PPV EVENT 06: WOW 34 (11.21 3:00 PM ET)",
+      "PPV EVENT 07: Top Level Pro 25 Thanksgiving Throwdown (11.21 5:00 PM ET)",
+      "PPV EVENT 08: OKTAGON 98 Legierski vs. Buchinger (11.21 12:00 PM ET)",
+      "PPV EVENT 09: KOK 130 Freiburg (11.21 12:00 PM ET)",
+      "PPV EVENT 10: Stein vs. Antonietti (11.21 12:00 PM ET)",
+      "PPV EVENT 11: Fight Clubbing 45 Lamezia Terme (11.21 2:30 PM ET)",
+      "PPV EVENT 12: USAC Southwest Sprints at Central Arizona (11.21 7:25 PM ET)",
+      "PPV EVENT 13: USAC Chase Johnson Classic at Merced (11.21 4:45 PM ET)",
+      "PPV EVENT 14: Snowball Derby Preview at 5 Flags (11.21 5:00 PM ET)",
+      "PPV EVENT 15: Southern Thunder Super Dirt Series Championship (11.21 6:30 PM ET)",
+      "PPV EVENT 16",
+      "PPV EVENT 17",
+      "PPV EVENT 18",
+      "PPV EVENT 19",
+      "PPV EVENT 20",
+      "PPV EVENT 21",
+      "PPV EVENT 22",
+      "PPV EVENT 23",
+      "PPV EVENT 24",
+      "PPV EVENT 25",
+      "PPV EVENT 26",
+      "PPV EVENT 27",
+      "PPV EVENT 28"
+    ]
+  },
+  "channels_in_guide": 6250,
+  "channels_without_guide": 189,
+  "programmes": 40801,
+  "gz_mb": 1.9,
+  "missing_sample": {
+    "0.espn": "UK: ESPN PLUS 00 PPV",
+    "01TV.fr": "US: FUSE MUSIC HD",
+    "1.espn": "UK: ESPN PLUS 01 PPV",
+    "10.espn": "UK: ESPN PLUS 10 PPV",
+    "100.espn": "UK: ESPN PLUS 100 PPV",
+    "101.espn": "UK: ESPN PLUS 101 PPV",
+    "102.espn": "UK: ESPN PLUS 102 PPV",
+    "103.espn": "UK: ESPN PLUS 103 PPV",
+    "104.espn": "UK: ESPN PLUS 104 PPV",
+    "105.espn": "UK: ESPN PLUS 105 PPV",
+    "106.espn": "UK: ESPN PLUS 106 PPV",
+    "107.espn": "UK: ESPN PLUS 107 PPV",
+    "108.espn": "UK: ESPN PLUS 108 PPV",
+    "109.espn": "UK: ESPN PLUS 109 PPV",
+    "11.espn": "UK: ESPN PLUS 11 PPV",
+    "12.espn": "UK: ESPN PLUS 12 PPV",
+    "13.espn": "UK: ESPN PLUS 13 PPV",
+    "14.espn": "UK: ESPN PLUS 14 PPV",
+    "15.espn": "UK: ESPN PLUS 15 PPV",
+    "16.espn": "UK: ESPN PLUS 16 PPV",
+    "17.espn": "UK: ESPN PLUS 17 PPV",
+    "18.espn": "UK: ESPN PLUS 18 PPV",
+    "19.espn": "UK: ESPN PLUS 19 PPV",
+    "2.espn": "UK: ESPN PLUS 02 PPV",
+    "20.espn": "UK: ESPN PLUS 20 PPV",
+    "21.espn": "UK: ESPN PLUS 21 PPV",
+    "22.espn": "UK: ESPN PLUS 22 PPV",
+    "23.espn": "UK: ESPN PLUS 23 PPV",
+    "24.espn": "UK: ESPN PLUS 24 PPV",
+    "25.espn": "UK: ESPN PLUS 25 PPV",
+    "26.espn": "UK: ESPN PLUS 26 PPV",
+    "27.espn": "UK: ESPN PLUS 27 PPV",
+    "28.espn": "UK: ESPN PLUS 28 PPV",
+    "29.espn": "UK: ESPN PLUS 29 PPV",
+    "3.espn": "UK: ESPN PLUS 03 PPV",
+    "30.espn": "UK: ESPN PLUS 30 PPV",
+    "31.espn": "UK: ESPN PLUS 31 PPV",
+    "32.espn": "UK: ESPN PLUS 32 PPV",
+    "33.espn": "UK: ESPN PLUS 33 PPV",
+    "34.espn": "UK: ESPN PLUS 34 PPV",
+    "35.espn": "UK: ESPN PLUS 35 PPV",
+    "36.espn": "UK: ESPN PLUS 36 PPV",
+    "37.espn": "UK: ESPN PLUS 37 PPV",
+    "38.espn": "UK: ESPN PLUS 38 PPV",
+    "39.espn": "UK: ESPN PLUS 39 PPV",
+    "4.espn": "UK: ESPN PLUS 04 PPV",
+    "40.espn": "UK: ESPN PLUS 40 PPV",
+    "41.espn": "UK: ESPN PLUS 41 PPV",
+    "42.espn": "UK: ESPN PLUS 42 PPV",
+    "43.espn": "UK: ESPN PLUS 43 PPV",
+    "44.espn": "UK: ESPN PLUS 44 PPV",
+    "45.espn": "UK: ESPN PLUS 45 PPV",
+    "46.espn": "UK: ESPN PLUS 46 PPV",
+    "47.espn": "UK: ESPN PLUS 47 PPV",
+    "48.espn": "UK: ESPN PLUS 48 PPV",
+    "49.espn": "UK: ESPN PLUS 49 PPV",
+    "5.espn": "UK: ESPN PLUS 05 PPV",
+    "50.espn": "UK: ESPN PLUS 50 PPV",
+    "51.espn": "UK: ESPN PLUS 51 PPV",
+    "52.espn": "UK: ESPN PLUS 52 PPV",
+    "53.espn": "UK: ESPN PLUS 53 PPV",
+    "54.espn": "UK: ESPN PLUS 54 PPV",
+    "55.espn": "UK: ESPN PLUS 55 PPV",
+    "56.espn": "UK: ESPN PLUS 56 PPV",
+    "57.espn": "UK: ESPN PLUS 57 PPV",
+    "58.espn": "UK: ESPN PLUS 58 PPV",
+    "59.espn": "UK: ESPN PLUS 59 PPV",
+    "6.espn": "UK: ESPN PLUS 06 PPV",
+    "60.espn": "UK: ESPN PLUS 60 PPV",
+    "61.espn": "UK: ESPN PLUS 61 PPV",
+    "62.espn": "UK: ESPN PLUS 62 PPV",
+    "63.espn": "UK: ESPN PLUS 63 PPV",
+    "64.espn": "UK: ESPN PLUS 64 PPV",
+    "65.espn": "UK: ESPN PLUS 65 PPV",
+    "66.espn": "UK: ESPN PLUS 66 PPV",
+    "67.espn": "UK: ESPN PLUS 67 PPV",
+    "68.espn": "UK: ESPN PLUS 68 PPV",
+    "69.espn": "UK: ESPN PLUS 69 PPV",
+    "7.espn": "UK: ESPN PLUS 07 PPV",
+    "70.espn": "UK: ESPN PLUS 70 PPV",
+    "71.espn": "UK: ESPN PLUS 71 PPV",
+    "72.espn": "UK: ESPN PLUS 72 PPV",
+    "73.espn": "UK: ESPN PLUS 73 PPV",
+    "74.espn": "UK: ESPN PLUS 74 PPV",
+    "75.espn": "UK: ESPN PLUS 75 PPV",
+    "76.espn": "UK: ESPN PLUS 76 PPV",
+    "77.espn": "UK: ESPN PLUS 77 PPV",
+    "78.espn": "UK: ESPN PLUS 78 PPV",
+    "79.espn": "UK: ESPN PLUS 79 PPV",
+    "8.espn": "UK: ESPN PLUS 08 PPV",
+    "80.espn": "UK: ESPN PLUS 80 PPV",
+    "81.espn": "UK: ESPN PLUS 81 PPV",
+    "82.espn": "UK: ESPN PLUS 82 PPV",
+    "83.espn": "UK: ESPN PLUS 83 PPV",
+    "84.espn": "UK: ESPN PLUS 84 PPV",
+    "85.espn": "UK: ESPN PLUS 85 PPV",
+    "86.espn": "UK: ESPN PLUS 86 PPV",
+    "87.espn": "UK: ESPN PLUS 87 PPV",
+    "88.espn": "UK: ESPN PLUS 88 PPV",
+    "89.espn": "UK: ESPN PLUS 89 PPV",
+    "9.espn": "UK: ESPN PLUS 09 PPV",
+    "90.espn": "UK: ESPN PLUS 90 PPV",
+    "91.espn": "UK: ESPN PLUS 91 PPV",
+    "92.espn": "UK: ESPN PLUS 92 PPV",
+    "93.espn": "UK: ESPN PLUS 93 PPV",
+    "94.espn": "UK: ESPN PLUS 94 PPV",
+    "95.espn": "UK: ESPN PLUS 95 PPV",
+    "96.espn": "UK: ESPN PLUS 96 PPV",
+    "97.espn": "UK: ESPN PLUS 97 PPV",
+    "98.espn": "UK: ESPN PLUS 98 PPV",
+    "99.espn": "UK: ESPN PLUS 99 PPV",
+    "ABCSpark.ca": "CA EN: ABC SPARK",
+    "AMC.uk": "UK: AMC 4K \u25c9",
+    "ATTSNRM.us": "US: AT&T SPORTSNET ROCKY MOUNTAIN HD",
+    "AlJazeeraMubasher.qa": "AR: Al Jazeera Now",
+    "Alaraby.eg": "AR: Al Araby 4K",
+    "BBCWorldNews.uk": "UK: BBC WORLD NEWS HD \u25c9",
+    "BET.ca": "CA: BET",
+    "BET.fr": "CA FR: BET",
+    "BallySPortsSoCal.us": "US: BALLY SPORTS SOCAL HD",
+    "BallySportsNewOrleans.us": "US: BALLY SPORTS NEW ORLEANS HD",
+    "BallySportsSouthwestPlus.us": "US: BALLY SPORTS SOUTHWEST PLUS (SAN ANTONIO) HD",
+    "BallySportsSun.us": "US: BALLY SPORTS SUN (MIAMI) HD",
+    "BallySportsWest.us": "US: BALLY SPORTS WEST HD",
+    "BallySportsWisconsin.us": "US: BALLY SPORTS WISCONSIN PLUS HD",
+    "CBSDrama.uk": "UK: CBS DRAMA \u25c9",
+    "CHRGD.ca": "CA EN: FAMILY CHRGD",
+    "CITV.uk": "UK: CITV \u25c9",
+    "CNBCArabiya.ae": "AR: CNBC Arabic",
+    "ComcastSportsnet.us": "US: SPORTSNET NEW YORK HD",
+    "CourtTV.uk": "UK: COURT TV \u25c9",
+    "CraftExtra.uk": "UK: CRAFT EXTRA \u25c9",
+    "CreateCraft.uk": "UK: CREATE AND CRAFT 4K \u25c9",
+    "DAZN1.uk": "UK: DAZN 1 \u1d34\u1d30 \u25c9",
+    "DiscoveryScience.ca": "CA: CTV NATURE CANADA",
+    "DisneyChannel.uk": "UK: DISNEY CHANNEL 4K",
+    "DisneyXD.uk": "UK: DISNEY XD 4K",
+    "EEntertainment.uk": "UK: E! ENTERTAINMENT \u25c9",
+    "Eurosport1.uk": "VIP: EUROSPORT 1 \u1d34\u1d30",
+    "Eurosport2.uk": "VIP: EUROSPORT 2 \u1d34\u1d30",
+    "FOXSports.us": "US: FOX SPORTS DETROIT HD",
+    "FamilyJr.ca": "CA: FAMILY JR",
+    "FanDuelMidwestIndiana.us": "US: FANDUEL MIDWEST",
+    "HBOFamily.us": "US: HBO FAMILY HD",
+    "HGTV.uk": "UK: HGTV \u25c9",
+    "HighStreet5.uk": "UK: HIGH STREET TV 5 \u25c9",
+    "HorrorChannel.uk": "UK: HORROR CHANNEL \u25c9",
+    "ICIRadioCanadaMontreal.ca": "CA FR: ICI RDI HD",
+    "ITVBe.uk": "UK: ITV BE HD \u25c9",
+    "IdealWorld.uk": "UK: IDEAL WORLD 4K \u25c9",
+    "JMLDirect.uk": "UK: JML DIRECT \u25c9",
+    "KBCW.us": "US: CW 44 HD [SAN FRANCISCO]",
+    "MTV90s.uk": "UK: MTV 90s",
+    "MTVHits.uk": "UK: MTV HITS",
+    "MTVMusic.uk": "UK: MTV MUSIC",
+    "MoreMax.us": "US: MOREMAX HD",
+    "MovieMax.us": "US: MOVIEMAX HD",
+    "Movies4Men.uk": "UK: MOVIES4MEN \u25c9",
+    "NBCSportsChicago.us": "US: NBC SPORTS CHICAGO",
+    "NBCSportsWashington.us": "US: NBC SPORTS WASHINGTON",
+    "NatGeo.ca": "CA: NAT GEO",
+    "OprahWinfreyNetwork.ca": "CA: OWN",
+    "OuterMax.us": "US: OUTERMAX HD",
+    "POPMax.uk": "UK: POP MAX",
+    "ParamountNetwork.ca": "CA EN: PARAMOUNT NETWORK",
+    "PlaneteJustice.fr": "UK: CRIME INVESTIGATION HEVC 4K",
+    "PlutoBounceXL.us": "US: BOUNCE XL",
+    "RealityXtra.uk": "UK: REALITY XTRA IE \u25c9",
+    "SkyCinemaAnimation.uk": "UK: SKY CINEMA ANIMATION 4K",
+    "SkyMax.uk": "UK: SKY MAX 4K",
+    "SkyReplay.uk": "UK: SKY REPLAY \u25c9",
+    "SkyShowcase.uk": "UK: SKY SHOWCASE \u25c9",
+    "SonyChannel.uk": "UK: SONY CHANNEL \u25c9",
+    "Syfy.uk": "UK: SYFY 4K \u25c9",
+    "TCM.uk": "UK: TCM 4K \u25c9",
+    "Telemagino.ca": "CA: TELEMAGINO",
+    "ViaplayXtra.uk": "UK: VIAPLAY XTRA \u1d34\u1d30 \u25c9",
+    "WPCW.us": "US: CW PITTSBURGH",
+    "Yoopa.ca": "CA FR: YOOPA HD",
+    "beINSports4En.qa": "US: BEIN SPORTS 4 HD",
+    "beINSports5En.qa": "US: BEIN SPORTS 5 HD",
+    "beINSports6En.qa": "US: BEIN SPORTS 6 HD",
+    "beINSports7En.qa": "US: BEIN SPORTS 7 HD",
+    "globalnewsbc1.ca": "CA: GLOBAL NEWS",
+    "i24newsinEnglish.il": "UK: I24 NEWS TV 4K \u25c9",
+    "iNews.id": "AR: iNews TV Arabic 4K",
+    "showcase.uk": "NOW: SKY SHOWCASE \u1d34\u1d30",
+    "skyshowcase.uk": "NOW: SKY SHOWCASE \u1d3f\u1d2c\u1d42",
+    "skysportsracing.uk": "NOW: SKY SPORTS RACING \u1d3f\u1d2c\u1d42"
+  },
+  "no_tvg_id_by_category": {
+    "US| ESPN+ PPV \u2c7d\u1d35\u1d3e": {
+      "count": 1001,
+      "sample": [
+        "####### ESPN+ PPV \u2c7d\u1d35\u1d3e #######",
+        "ENDED | BRISBANE ROAR FC VS. SYDNEY FC | Sat 21 Nov 03:40 EST (US) | 8K EXCLUSIVE | US: ESPN+ PPV 1",
+        "ENDED | GRAND SLAM OF CURLING: NATIONAL (TIEBREAKER (IF NECESSARY)) | Sat 21 Nov 06:30 EST (US) | 8K EXCLUSIVE | US: ESPN+ PPV 2",
+        "ENDED | D. ALAVES VS. DEPORTIVO A CORU\u00d1A (MATCHDAY #13) | Sat 21 Nov 07:50 EST (US) | 8K EXCLUSIVE | US: ESPN+ PPV 3"
+      ]
+    },
+    "US| FLO \u2c7d\u1d35\u1d3e PPV": {
+      "count": 1001,
+      "sample": [
+        "####### FLO \u2c7d\u1d35\u1d3e PPV #######",
+        "flolive: 2026 Australia vs England - Cricket (Australia vs England) (2026-11-21 03:15:00)",
+        "flolive: 2026 Bangladesh A vs Afghanistan A - Cricket (Bangladesh A vs Afghanistan A) (2026-11-21 05:00:00)",
+        "flograppling: 2026 PBJJF Patos de Minas Spring International Open (Mat 1) (2026-11-21 07:00:00)"
+      ]
+    },
+    "US| AT&T \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 847,
+      "sample": [
+        "##### AT&T \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "AT&T: 123 GO! \u1d3f\u1d2c\u1d42",
+        "AT&T: 365BLK \u1d3f\u1d2c\u1d42",
+        "AT&T: 40 Y 20 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| PRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 674,
+      "sample": [
+        "#### PRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "PRIME: 20/20 \u1d3f\u1d2c\u1d42",
+        "PRIME: 24/7 LAUGHS \u1d3f\u1d2c\u1d42",
+        "PRIME: 365BLK \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| ROKU \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 653,
+      "sample": [
+        "###### ROKU \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ######",
+        "RK: 48 HOURS \u1d3f\u1d2c\u1d42",
+        "RK: 50 CENT ACTION \u1d3f\u1d2c\u1d42",
+        "RK: 60 MINUTES \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| ESPN+ PPV": {
+      "count": 601,
+      "sample": [
+        "####### ESPN+ PPV #######",
+        "US (ESPN+ 001) | Brisbane Roar FC vs. Sydney FC Nov 21 3:40AM ET (2026-11-21 03:40:07)",
+        "US (ESPN+ 002) | Grand Slam of Curling: National (Tiebreaker (if necessary)) Nov 21 6:30AM ET (2026-11-21 06:30:00)",
+        "US (ESPN+ 003) | D. Alaves vs. Deportivo A Coru\u00f1a (Matchday #13) Nov 21 7:50AM ET (2026-11-21 07:50:00)"
+      ]
+    },
+    "US| NBC \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 565,
+      "sample": [
+        "####### NBC \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #######",
+        "US: NBC BOSTON NEWS (PC) \u1d3f\u1d2c\u1d42",
+        "US: NBC BRAVO (EAST) (D) \u1d3f\u1d2c\u1d42",
+        "US: NBC BRAVO (WEST) (D) \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| 24/7 COMEDY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 427,
+      "sample": [
+        "## 24/7 COMEDY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: 30 ROCK",
+        "24/7: A TOUCH OF CLOTH",
+        "24/7: ABOUT A BOY"
+      ]
+    },
+    "US| TV \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 404,
+      "sample": [
+        "###### TV \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ######",
+        "TV: 20/20 \u1d3f\u1d2c\u1d42",
+        "TV: 50 CENT ACTION CHANNEL \u1d3f\u1d2c\u1d42",
+        "TV: A&E \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| CINEMA TV SHOWS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 313,
+      "sample": [
+        "### CINEMANIA TV SHOWS \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: CM APPLE TV PLUS 1 4K",
+        "US: CM APPLE TV PLUS 2 4K",
+        "US: CM APPLE TV PLUS 3 4K"
+      ]
+    },
+    "UK| 24/7 \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 308,
+      "sample": [
+        "###### 24/7 HD/4K ######",
+        "UK: 24/7 NETFLIX ACTION 1 4K",
+        "UK: 24/7 NETFLIX ACTION 2 4K",
+        "UK: 24/7 NETFLIX STAND-UP 4K"
+      ]
+    },
+    "US| FLO SPORTS PPV": {
+      "count": 301,
+      "sample": [
+        "###### FLO SPORTS PPV ######",
+        "Flo (FLSP) 1: FloCheer 24/7",
+        "Flo (FLSP) 2: PBR RidePass",
+        "Flo (FLSP) 3: PBR RidePass"
+      ]
+    },
+    "US| FOX \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 228,
+      "sample": [
+        "##### FOX \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: FOX SPORTS 2",
+        "US: FOX SPORTS COLLEGE ATLANTIC HD",
+        "US: FOX SPORTS COLLEGE CENTRAL HD"
+      ]
+    },
+    "US| SOCCER PPV": {
+      "count": 201,
+      "sample": [
+        "####### SOCCER PPV #######",
+        "End | ST World Tour: Seoul 1 | all | 21-11-2026 | 00:00 (GMT) | 8K EXCLUSIVE | US: SOCCER PPV 1",
+        "End | World Cup SS: Obihiro 2 | all | 21-11-2026 | 00:00 (GMT) | 8K EXCLUSIVE | US: SOCCER PPV 2",
+        "End | Sakatsume, Himeno vs Urrutia, Maria Florencia | all | 21-11-2026 | 00:00 (GMT) | 8K EXCLUSIVE | US: SOCCER PPV 3"
+      ]
+    },
+    "CA| SOCCER PPV": {
+      "count": 201,
+      "sample": [
+        "####### SOCCER PPV #######",
+        "End | BKFC Fight Night Myrtle Beach: Richardson vs. Oxendine | all | 21-11-2026 | 00:00 (GMT) | 8K EXCLUSIVE | CA: SOCCER PPV 1",
+        "End | Melbourne Demons vs. Carlton Blues | all | 21-11-2026 | 00:00 (GMT) | 8K EXCLUSIVE | CA: SOCCER PPV 2",
+        "End | North Melbourne Kangaroos vs. Sydney Swans | all | 21-11-2026 | 00:00 (GMT) | 8K EXCLUSIVE | CA: SOCCER PPV 3"
+      ]
+    },
+    "US| 24/7 MOVIES/ACTORS \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 172,
+      "sample": [
+        "## 24/7 MOVIES/ACTORS \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: ADAM DRIVER",
+        "24/7: ADAM SANDLER",
+        "24/7: ADAMSANDLER"
+      ]
+    },
+    "US| CBS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 172,
+      "sample": [
+        "##### CBS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: CBS HD",
+        "US: CBS (WBOC) SALISBURY",
+        "US: CBS 2 WCBS (NEW YORK) HD"
+      ]
+    },
+    "FOR ADULTS": {
+      "count": 170,
+      "sample": [
+        "####### ADULT \u1d3f\u1d2c\u1d42 #######",
+        "ADULT: EROTIC \u1d3f\u1d2c\u1d42",
+        "ADULT: EROTIC 2 \u1d3f\u1d2c\u1d42",
+        "ADULT: EROTIC 3 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| 24/7 PPV \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 157,
+      "sample": [
+        "#### 24/7 MOVIES \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ####",
+        "US: 24/7 MET GALA 2023",
+        "US: 24/7 CARTOON BOX",
+        "US: 24/7 CAR BASS BOUND"
+      ]
+    },
+    "US| TUBI \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 153,
+      "sample": [
+        "####### TUBI \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #######",
+        "TUBI: A&E CRIME 360 \u1d3f\u1d2c\u1d42",
+        "TUBI: ABC NEWS LIVE \u1d3f\u1d2c\u1d42",
+        "TUBI: ALIEN NATION BY DUST \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| 24/7 REALITY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 153,
+      "sample": [
+        "## 24/7 REALITY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: ALASKAN BUSH PEOPLE",
+        "24/7: AMERICA'S NEXT TOP MODEL",
+        "24/7: AMERICAN DIGGER"
+      ]
+    },
+    "CA| TSN+ PPV": {
+      "count": 152,
+      "sample": [
+        "##### TSN+ PPV #####",
+        "SPORTSCENTRE A @ Nov 21 02:00 :TSN+  01",
+        "SC: Top 40 Hail Marys A @ Nov 21 02:00 :TSN+  02",
+        "SC: Top Characters in Sports A @ Nov 21 02:30 :TSN+  03"
+      ]
+    },
+    "US| BTN+ PPV": {
+      "count": 151,
+      "sample": [
+        "####### BTN+ PPV #######",
+        "(US) (BTN+ 001) | Ice Hockey (W): UM_Duluth at Minnesota St. Mankato (2026-11-20 15:50:00)",
+        "(US) (BTN+ 002) | Ice Hockey (W): Delaware at Penn State (2026-11-20 15:50:05)",
+        "(US) (BTN+ 003) | Swimming and Diving: Fall Invitational _ Finals (2026-11-20 17:20:00)"
+      ]
+    },
+    "US| TV \u1d9c\u1da6\u1d57\u02b8 \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 147,
+      "sample": [
+        "#### TV \u1d9c\u1da6\u1d57\u02b8 \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ####",
+        "TV: A3 NEW YORK 02 WCBS CBS NEW YORK \u1d9c\u1da6\u1d57\u02b8 \u1d3f\u1d2c\u1d42",
+        "TV: A3 NEW YORK 04 WNBC NBC NEW YORK \u1d9c\u1da6\u1d57\u02b8 \u1d3f\u1d2c\u1d42",
+        "TV: A3 NEW YORK 05 WNYW FOX NEW YORK \u1d9c\u1da6\u1d57\u02b8 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| NETFLIX ON AIR \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 135,
+      "sample": [
+        "### NETFLIX ON AIR \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: 13 REASONS WHY \u1d3f\u1d2c\u1d42",
+        "US: 3 BODY PROPLEM \u1d3f\u1d2c\u1d42",
+        "US: A MAN IN FULL \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| 24/7 ONEPLAY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 125,
+      "sample": [
+        "##### ONEPLAY CINEMA #####",
+        "US: ONEPLAY PREMIERE \u1d3f\u1d2c\u1d42",
+        "US: ONEPLAY EXTRA \u1d3f\u1d2c\u1d42",
+        "US: ONEPLAY BESTOFF \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| NBA TEAM PPV": {
+      "count": 122,
+      "sample": [
+        "##### NBA TEAMS SLING #####",
+        "NBA: LEAGUE PASS 1 \u1d34\u1d30",
+        "NBA: LEAGUE PASS 2 \u1d34\u1d30",
+        "NBA: LEAGUE PASS 3 \u1d34\u1d30"
+      ]
+    },
+    "US| 24/7 ACTION/ADVENTURE \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 119,
+      "sample": [
+        "## 24/7 ACTION/ADVENTURE \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: 24",
+        "24/7: ALIAS",
+        "24/7: AMAZING STORIES"
+      ]
+    },
+    "US| ABC \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 117,
+      "sample": [
+        "##### ABC \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: ABC (EAST)",
+        "US: ABC NEWS HD",
+        "US: ABC NEWS LIVE HD"
+      ]
+    },
+    "UK| BBC IPLAYER \u1d3f\u1d2c\u1d42": {
+      "count": 117,
+      "sample": [
+        "#### BBC IPLAYER \u1d3f\u1d2c\u1d42 ####",
+        "UK: BBC NEWS \u1d3f\u1d2c\u1d42",
+        "UK: BBC ONE CHANNEL ISLANDS \u1d3f\u1d2c\u1d42",
+        "UK: BBC ONE EAST \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| 24/7 CLASSIC SHOWS \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 112,
+      "sample": [
+        "## 24/7 CLASSIC SHOWS \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: ADAM-12",
+        "24/7: AIRWOLF",
+        "24/7: ALFRED HITCHCOCK PRESENTS"
+      ]
+    },
+    "UK| SOCCER REPLAY \u1d3f\u1d2c\u1d42": {
+      "count": 108,
+      "sample": [
+        "##### PL REPLAYS \u1d3f\u1d2c\u1d42 #####",
+        "UK: PL REPLAY INFO HD",
+        "UK: PL HIGHLIGHTS HD",
+        "UK: PL REPLAY 1 HD"
+      ]
+    },
+    "US| 24/7 CRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 106,
+      "sample": [
+        "## 24/7 CRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: BAD BANKS",
+        "24/7: BANCROFT",
+        "24/7: BANSHEE"
+      ]
+    },
+    "US| NCAAB PPV": {
+      "count": 102,
+      "sample": [
+        "####### NCAAB PPV #######",
+        "NCAAM: South Carolina Upstate vs UNC Greensboro @ Nov 21 11:00 AM :NCAAB  01",
+        "NCAAM: Siena vs Bucknell @ Nov 21 11:00 AM :NCAAB  02",
+        "NCAAM: Columbia vs Boston University @ Nov 21 12:00 PM :NCAAB  03"
+      ]
+    },
+    "US| 24/7 PRIME VIDEO \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 101,
+      "sample": [
+        "### 24/7 PRIME VIDEO \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: 007: ROAD TO A MILLION \u1d3f\u1d2c\u1d42",
+        "US: A PRIVATE AFFAIR \u1d3f\u1d2c\u1d42",
+        "US: BALLARD \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| NFHS PPV": {
+      "count": 101,
+      "sample": [
+        "####### NFHS PPV #######",
+        "ENDED | KING KEKAULIKE VS. BALDWIN | Sat 21 Nov 06:00 EST (US) | 8K EXCLUSIVE | US: NFHS PPV 1",
+        "ENDED | KAISER VS. WAIAKEA | Sat 21 Nov 06:00 EST (US) | 8K EXCLUSIVE | US: NFHS PPV 2",
+        "ENDED | SPARTAN WAR JV WRESTLING TOURNAMENT - PART 2 | Sat 21 Nov 06:01 EST (US) | 8K EXCLUSIVE | US: NFHS PPV 3"
+      ]
+    },
+    "US| MILB PPV": {
+      "count": 101,
+      "sample": [
+        "####### MILB PPV #######",
+        "Rochester Red Wings vs Oklahoma City Comets @ Sep 26 10:05 PM :Milb  01",
+        ":Milb  02",
+        ":Milb  03"
+      ]
+    },
+    "US| MILB PPV \u207d\u1d2e\u1d37\u207e": {
+      "count": 101,
+      "sample": [
+        "####### MiLB PPV \u207d\u1d2e\u1d37\u207e #######",
+        "US (MiLB 001) | Oklahoma City Comets @ Rochester Red Wings (2026-09-26 22:05:00)",
+        "US (MiLB 002) |  (2098-12-31 08:00:01)",
+        "US (MiLB 003) |  (2098-12-31 08:00:02)"
+      ]
+    },
+    "US| PEACOCK PPV \u2c7d\u1d35\u1d3e": {
+      "count": 101,
+      "sample": [
+        "####### PEACOCK PPV \u2c7d\u1d35\u1d3e #######",
+        "US (Peacock 001) | Women`s Slalom: Gurgl Run 1 (2026-11-21 04:30:00)",
+        "US (Peacock 002) | Pairs Free Skate (2026-11-21 05:15:00)",
+        "US (Peacock 003) | Women`s Free Skate (2026-11-21 07:00:00)"
+      ]
+    },
+    "US| MAX PPV": {
+      "count": 101,
+      "sample": [
+        "####### MAX PPV #######",
+        "Cyclo-cross: HG Cross | Lokeren @ Nov 21 07:42 AM :MAX US 01",
+        "Cyclo-cross: HG Cross | Lokeren @ Nov 21 08:57 AM :MAX US 02",
+        "Football: No 20 Houston at West Virginia @ Nov 21 12:30 PM :MAX US 03"
+      ]
+    },
+    "US| STAN PPV": {
+      "count": 101,
+      "sample": [
+        "##### STAN PPV #####",
+        "AU (STAN 01) | Hong Kong China v Tonga  Nations Cup Round 6 2026 (2026-11-21 19:50:20)",
+        "AU (STAN 02) | Manchester City v Fulham  Premier League Matchweek 11 2026/2027 (2026-11-21 22:30:50)",
+        "AU (STAN 03) |  \u2022 Manchester City v Fulham  Premier League Matchweek 11 2026/2027 (2026-11-21 23:20:50)"
+      ]
+    },
+    "US| FLO COLLEGE PPV": {
+      "count": 101,
+      "sample": [
+        "##### FLO COLLEGE PPV #####",
+        "Greensboro Open @ Nov 21 10:00 AM :Flo College  01",
+        "Malone Invitational @ Nov 21 10:00 AM :Flo College  02",
+        "Military Duals @ Nov 21 10:00 AM :Flo College  03"
+      ]
+    },
+    "US| PARAMOUNT+ PPV": {
+      "count": 101,
+      "sample": [
+        "####### PARAMOUNT+ PPV #######",
+        "English Football League: Norwich City vs Cardiff City @ Nov 21 7:20 AM :Paramount+  01",
+        "English Football League: Millwall vs Queens Park Rangers @ Nov 21 7:20 AM :Paramount+  02",
+        "Barclays Women's Super League: Liverpool vs Chelsea @ Nov 21 7:35 AM :Paramount+  03"
+      ]
+    },
+    "CA| VICTORY+ PPV": {
+      "count": 101,
+      "sample": [
+        "####### VICTORY+ PPV #######",
+        "(Victory+ 001) | THSCA Game of the Week : Frisco Lone Star at Melissa (2026-09-25 19:55:00)",
+        "(Victory+ 002) |  (2098-12-31 08:00:01)",
+        "(Victory+ 003) |  (2098-12-31 08:00:02)"
+      ]
+    },
+    "UK| MAX PPV": {
+      "count": 101,
+      "sample": [
+        "####### MAX PPV #######",
+        "ENDED | CENTRAL COAST MARINERS - PERTH GLORY | Sat 21 Nov 05:55 UTC (UK) | 8K EXCLUSIVE | UK: MAX PPV 1",
+        "ENDED | AUSTRALIA - ENGLAND | Sat 21 Nov 08:00 UTC (UK) | 8K EXCLUSIVE | UK: MAX PPV 2",
+        "ENDED | MOTO2 AND MOTO3 | ROUND 21 | PORTUGAL | Sat 21 Nov 12:13 UTC (UK) | 8K EXCLUSIVE | UK: MAX PPV 3"
+      ]
+    },
+    "AR| BOX OFFICE 4K \u25b6 \u0628\u0648\u0643\u0633 \u0627\u0648\u0641\u064a\u0633": {
+      "count": 101,
+      "sample": [
+        "###### BOX OFFICE 4K TV ######",
+        "AR: BOX OFFICE 1 4K",
+        "AR: BOX OFFICE 2 4K",
+        "AR: BOX OFFICE 3 4K"
+      ]
+    },
+    "US| DAZN PPV": {
+      "count": 100,
+      "sample": [
+        "####### DAZN PPV US #######",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | US: DAZN PPV 1",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | US: DAZN PPV 2",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | US: DAZN PPV 3"
+      ]
+    },
+    "CA| DAZN PPV \u2c7d\u1d35\u1d3e": {
+      "count": 100,
+      "sample": [
+        "####### DAZN PPV CA #######",
+        "Next | Mighty Avengers FC vs. East Central FC | DFA Premier League - Dominica | 2026-11-21 | 23:00 (GMT) | 8K EXCLUSIVE | CA: DAZN PPV 1",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | CA: DAZN PPV 2",
+        "Next | Maryland @ USC | NCAA Football | 2026-11-21 | 23:15 (GMT) | 8K EXCLUSIVE | CA: DAZN PPV 3"
+      ]
+    },
+    "UK| DAZN PPV VIP": {
+      "count": 100,
+      "sample": [
+        "####### DAZN PPV GB #######",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | GB: DAZN PPV 1",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | GB: DAZN PPV 2",
+        "NO EVENT STREAMING NOW - | 8K EXCLUSIVE | GB: DAZN PPV 3"
+      ]
+    },
+    "US| SPORT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 99,
+      "sample": [
+        "###### SPORT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ######",
+        "US: PREMIER LEAGUE \u1d3f\u1d2c\u1d42",
+        "US: TUDN EXTRA 1 \u1d3f\u1d2c\u1d42",
+        "US: TUDN EXTRA 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| 24/7 CARTOON \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 98,
+      "sample": [
+        "## 24/7 CARTOON \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: AHIRU NO SORA",
+        "24/7: AMERICAN DAD",
+        "24/7: AQUA TEEN HUNGER FORCE"
+      ]
+    },
+    "AR| KIDS 4K \u25b6 \u0623\u0637\u0641\u0627\u0644": {
+      "count": 95,
+      "sample": [
+        "###### KIDS TV ######",
+        "AR: MBC TOON 4K",
+        "AR: SpongeBob 4K",
+        "AR: Wanasat Baby 4K"
+      ]
+    },
+    "US| 24/7 KIDS/FAMILY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 87,
+      "sample": [
+        "## 24/7 KIDS/FAMILY \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "24/7: ARE YOU AFRAID OF THE DARK",
+        "24/7: AS TOLD BY GINGER",
+        "24/7: AUSTIN AND ALLY"
+      ]
+    },
+    "US| NCAAF PPV": {
+      "count": 86,
+      "sample": [
+        "##### NCAAF #####",
+        "NCAAF 01: ESPN",
+        "NCAAF 02: ESPN2",
+        "NCAAF 03: ESPNU"
+      ]
+    },
+    "UK| PRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 84,
+      "sample": [
+        "#### PRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "PRIME: AMERICAN CRIMES \u1d3f\u1d2c\u1d42",
+        "PRIME: ARE WE THERE YET? \u1d3f\u1d2c\u1d42",
+        "PRIME: AX MEN \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| ENTERTAINMENT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 80,
+      "sample": [
+        "## ENTERTAINMENT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "US: BIG BROTHER 1 4K",
+        "US: BIG BROTHER 2 4K",
+        "US: BIG BROTHER 3 4K"
+      ]
+    },
+    "CA| CANADA \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 77,
+      "sample": [
+        "#### CANADA \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ####",
+        "CA: TVA HULL HD",
+        "CA: AHC",
+        "CA: BBC CANADA"
+      ]
+    },
+    "US| PPV EVENT \u207d\u1d2e\u1d37\u207e": {
+      "count": 71,
+      "sample": [
+        "###### PPV EVENT \u207d\u1d2e\u1d37\u207e ######",
+        "PPV EVENT 01: PRELIMS UFC FN (11.21 10:00 AM ET)",
+        "PPV EVENT 02: PRELIMS UFC FN (11.21 10:00 AM ET)",
+        "PPV EVENT 03: UFC FN Prochazka vs. Stirling (11.21 1:00 PM ET)"
+      ]
+    },
+    "UK| SKY SPORT+ PPV \u1d3f\u1d2c\u1d42": {
+      "count": 71,
+      "sample": [
+        "###### SKY SPORT+ PPV \u1d3f\u1d2c\u1d42 ######",
+        "UK: SKY SPORTS+ EVENT 1",
+        "UK: SKY SPORTS+ EVENT 2",
+        "UK: SKY SPORTS+ EVENT 3"
+      ]
+    },
+    "UK| PPV EVENT \u207d\u1d2e\u1d37\u207e": {
+      "count": 71,
+      "sample": [
+        "###### PPV EVENT \u207d\u1d2e\u1d37\u207e ######",
+        "PPV EVENT 01: PRELIMS UFC FN (11.21 10:00 AM ET)",
+        "PPV EVENT 02: PRELIMS UFC FN (11.21 10:00 AM ET)",
+        "PPV EVENT 03: UFC FN Prochazka vs. Stirling (11.21 1:00 PM ET)"
+      ]
+    },
+    "UK| PPV EVENT": {
+      "count": 68,
+      "sample": [
+        "###### PPV HD/4K ######",
+        "UK: SKY BOX OFFICE HD",
+        "UK: SKY BOX OFFICE SD",
+        "UK: SKY BOX OFFICE HEVC"
+      ]
+    },
+    "UK| DAZN PPV": {
+      "count": 64,
+      "sample": [
+        "####### DAZN PPV \u1d3f\u1d2c\u1d42 #######",
+        "UK: DAZN HD",
+        "UK: DAZN 4K",
+        "UK: DAZN PPV HD"
+      ]
+    },
+    "US| CINEMANIA HOLLYWOOD \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 61,
+      "sample": [
+        "### CINEMANIA HOLLYWOOD \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: CM HOLLYWOOD PREMIERE 1 4K",
+        "US: CM HOLLYWOOD PREMIERE 2 4K",
+        "US: CM HOLLYWOOD PREMIERE 3 4K"
+      ]
+    },
+    "US| TELEMUNDO NETWORK \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 60,
+      "sample": [
+        "#### TELEMUNDO \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ####",
+        "US: TELEMUNDO \u1d34\u1d30",
+        "US: TELEMUNDO NBC (WNJU) \u1d34\u1d30",
+        "US: TELEMUNDO (KBLR) NORTH LAS VEGAS \u1d34\u1d30"
+      ]
+    },
+    "US| SPECTRUM NETWORK \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 58,
+      "sample": [
+        "## SPECTRUM NETWORK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "US: SPECTRUM XCAST \u1d34\u1d30",
+        "US: SPECTRUM XCAST 2 \u1d34\u1d30",
+        "US: SPECTRUM XCAST 3 \u1d34\u1d30"
+      ]
+    },
+    "US| NEWS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 58,
+      "sample": [
+        "##### NEWS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: THE FIRST HD",
+        "US: ABC HD",
+        "US: BLOOMBERG HD"
+      ]
+    },
+    "CA| PRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 53,
+      "sample": [
+        "#### PRIME \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "PRIME: ADULT SWIM \u1d3f\u1d2c\u1d42",
+        "PRIME: AMC CANADA \u1d3f\u1d2c\u1d42",
+        "PRIME: AMC+ CANADA \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "CA| DAZN PPV": {
+      "count": 52,
+      "sample": [
+        "####### DAZN CANADA PPV #######",
+        "CA: DAZN 1 PPV",
+        "CA: DAZN 2 PPV",
+        "CA: DAZN 3 PPV"
+      ]
+    },
+    "US| 24/7 DISNEY+ \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 51,
+      "sample": [
+        "### 24/7 DISNEY+ \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: A THOUSAND BLOWS \u1d3f\u1d2c\u1d42",
+        "US: AGATHA ALL ALONG \u1d3f\u1d2c\u1d42",
+        "US: AHSOKA \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| PPV EVENT": {
+      "count": 51,
+      "sample": [
+        "##### PPV HD/4K #####",
+        "US: BOX OFFICE HD",
+        "US: BOX OFFICE SD",
+        "US: BOX OFFICE HEVC"
+      ]
+    },
+    "US| FIFA+ PPV": {
+      "count": 51,
+      "sample": [
+        "####### FIFA+ PPV #######",
+        "ENDED | ATL\u00c8TIC ESCALDES VS. FC SANTA COLOMA | Sat 21 Nov 05:00 EST (US) | 8K EXCLUSIVE | US: FIFA+ PPV 1",
+        "ENDED | LA PASSE FC VS. PTL BAZAR BROTHERS FC | Sat 21 Nov 05:45 EST (US) | 8K EXCLUSIVE | US: FIFA+ PPV 2",
+        "ENDED | MUZINGA VS. RUKINZO | Sat 21 Nov 08:00 EST (US) | 8K EXCLUSIVE | US: FIFA+ PPV 3"
+      ]
+    },
+    "US| MLS PPV VIP": {
+      "count": 51,
+      "sample": [
+        "####### MLS PPV VIP #######",
+        "NEXT | MLS COUNTDOWN | Sat 21 Nov 13:15 EST (US) | 8K EXCLUSIVE | US: MLS PPV 1",
+        "NEXT | NEW ENGLAND VS. PHILADELPHIA | Sat 21 Nov 14:00 EST (US) | 8K EXCLUSIVE | US: MLS PPV 2",
+        "NEXT | DALLAS VS. PORTLAND | Sat 21 Nov 15:30 EST (US) | 8K EXCLUSIVE | US: MLS PPV 3"
+      ]
+    },
+    "US| MLS PPV \u207d\u1d2e\u1d37\u207e": {
+      "count": 51,
+      "sample": [
+        "####### MLS PPV \u207d\u1d2e\u1d37\u207e #######",
+        "(Apple) (MLS) 001 |  MLS Countdown  (2026-11-21 13:10:00)",
+        "(Apple) (MLS) 002 |  New England vs. Philadelphia  (2026-11-21 13:55:00)",
+        "(Apple) (MLS) 003 |  New England vs. Philadelphia (Spanish) (2026-11-21 13:55:05)"
+      ]
+    },
+    "US| WNBA PPV \u207d\u1d2e\u1d37\u207e": {
+      "count": 51,
+      "sample": [
+        "####### WNBA PPV \u207d\u1d2e\u1d37\u207e #######",
+        "US (WNBA 01) | Atlanta Dream at Golden State Valkyries (2026-11-01 00:00:00)",
+        "US (WNBA 02) |  (2098-12-31 13:00:01)",
+        "US (WNBA 03) |  (2098-12-31 13:00:02)"
+      ]
+    },
+    "US| TENNIS PPV": {
+      "count": 51,
+      "sample": [
+        "##### TENNIS PPV #####",
+        "Sakatsume, Himeno vs Urrutia, Maria Florencia @ Nov 21 05:10 AM - Billie Jean King Cup :Tennis  01",
+        "Sawangkaew, Mananchaya vs Waltert, Simona @ Nov 21 07:00 AM - Billie Jean King Cup :Tennis  02",
+        "Tararudee, Lanlana\t vs Teichmann, Jil @ Nov 21 08:10 AM - Billie Jean King Cup :Tennis  03"
+      ]
+    },
+    "CA| CBC PPV": {
+      "count": 51,
+      "sample": [
+        "####### CBC PPV #######",
+        "CBC 1: sports|FIBA Mens 3X3 Basketball World Tour: DAY 1 - Macau",
+        "CBC 2: sports|World Volleyball Beach Pro Tour Elite16: DAY 3 | Court 2 - Jo\u00e3o Pessoa",
+        "CBC 3: sports|World Volleyball Beach Pro Tour Elite16: DAY 3 | Court 1 - Jo\u00e3o Pessoa"
+      ]
+    },
+    "CA| SPORTSNET PPV": {
+      "count": 51,
+      "sample": [
+        "####### SPORTSNET PPV #######",
+        "NEXT | GARDEN HOTSPURS VS. CAYON ROCKETS | Sat 21 Nov 17:00 EST (US) | 8K EXCLUSIVE | US: FIFA+ PPV 51",
+        "NEXT | CAIQUETIO VS. NACIONAL | Sat 21 Nov 17:30 EST (US) | 8K EXCLUSIVE | US: FIFA+ PPV 52",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | CA: SPORTSNET PPV 3"
+      ]
+    },
+    "CA| CANADA WEST PPV": {
+      "count": 51,
+      "sample": [
+        "####### CANADA WEST PPV #######",
+        "NEXT | TWU @ TRU BASKETBALL WOMEN | Sat 21 Nov 16:30 NST (CA) | 8K EXCLUSIVE | CA: CANADA WEST PPV 1",
+        "NEXT | MAN @ GMU VOLLEYBALL MEN | Sat 21 Nov 17:20 NST (CA) | 8K EXCLUSIVE | CA: CANADA WEST PPV 2",
+        "NEXT | CGY @ SSK VOLLEYBALL WOMEN | Sat 21 Nov 17:30 NST (CA) | 8K EXCLUSIVE | CA: CANADA WEST PPV 3"
+      ]
+    },
+    "US| PEACOCK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 44,
+      "sample": [
+        "##### PEACOCK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: WWE NETWORK \u1d3f\u1d2c\u1d42",
+        "US: BOUNCE TV \u1d3f\u1d2c\u1d42",
+        "US: CIRCLE COUNTRY \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "CA| ROGERS SUPER SPORTS PACK EN": {
+      "count": 43,
+      "sample": [
+        "####### ROGERS SUPER SPORTS PACK EN #######",
+        "CA EN: ROGERS SPORTSNET ONE \u1d34\u1d30",
+        "CA EN: ROGERS TV LONDON \u1d34\u1d30",
+        "CA EN: ROGERS SUPER SPORTS PACK \u1d34\u1d30"
+      ]
+    },
+    "CA| WHL PPV": {
+      "count": 43,
+      "sample": [
+        "##### WHL PPV 1 #####",
+        "CHL 41 HD (D)",
+        "CHL 42 HD (D)",
+        "CHL 43 HD (D)"
+      ]
+    },
+    "US| MAX PPV \u2c7d\u1d35\u1d3e": {
+      "count": 41,
+      "sample": [
+        "##### MAX PPV \u2c7d\u1d35\u1d3e #####",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | US: MAX PPV 1",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | US: MAX PPV 2",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | US: MAX PPV 3"
+      ]
+    },
+    "CA| SPORTSNET+ PPV": {
+      "count": 41,
+      "sample": [
+        "#### SPORTSNET+ PPV ####",
+        "Sportsnet Central Nov 20 @ Nov 21 5:00 AM :Sportsnet+  01",
+        "FAWSL: Liverpool vs Chelsea @ Nov 21 7:35 AM :Sportsnet+  02",
+        "MotoGP: Tissot Sprint Grand Prix of Portugal @ Nov 21 9:30 AM :Sportsnet+  03"
+      ]
+    },
+    "IE| CLUBBER PPV": {
+      "count": 41,
+      "sample": [
+        "##### CLUBBER PPV #####",
+        "IE: CLUBBER EVENT 1",
+        "IE: CLUBBER EVENT 2",
+        "IE: CLUBBER EVENT 3"
+      ]
+    },
+    "UK| AMAZON PRIME PPV": {
+      "count": 39,
+      "sample": [
+        "#### AMAZON PPV ####",
+        "UK: AMAZON 1 PPV",
+        "UK: AMAZON 2 PPV",
+        "UK: AMAZON 3 PPV"
+      ]
+    },
+    "UK| NATIONAL LEAGUE PPV": {
+      "count": 39,
+      "sample": [
+        "#### NATIONAL LEAGUE PPV ####",
+        "National League 1 | Solihull Moors vs Altrincham // UK Sat 21 Nov 12:30pm // ET Sat 21 Nov 7:30am",
+        "National League 2 | Tamworth vs Eastleigh // UK Sat 21 Nov 12:30pm // ET Sat 21 Nov 7:30am",
+        "National League 3 | Worthing vs Harrogate // UK Sat 21 Nov 3:00pm // ET Sat 21 Nov 10:00am"
+      ]
+    },
+    "US| UEFA PPV": {
+      "count": 38,
+      "sample": [
+        "####### UEFA PPV #######",
+        "UEFA | 1 - Liverpool vs Chelsea 12:45 pm",
+        "UEFA | 2 - London City Lionesses  vs Crystal Palace 17:15 PM",
+        "UEFA | 3 - Chelsea vs Paris SG 8:00 PM"
+      ]
+    },
+    "UK| UEFA PPV": {
+      "count": 38,
+      "sample": [
+        "###### UEFA PPV ######",
+        "UEFA | 1 - Liverpool vs Chelsea 12:45 pm",
+        "UEFA | 2 - London City Lionesses  vs Crystal Palace 17:15 PM",
+        "UEFA | 3 - Chelsea vs Paris SG 8:00 PM"
+      ]
+    },
+    "US| MLB TEAM PPV": {
+      "count": 37,
+      "sample": [
+        "##### MLB TEAM PPV #####",
+        "US: SLING MLB NETWORK \u1d34\u1d30",
+        "US: PRIME MLB \u1d34\u1d30",
+        "US: PRIME MLB NETWORK \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| EPL PREMIER LEAGUE PPV \u2c7d\u1d35\u1d3e": {
+      "count": 37,
+      "sample": [
+        "####### EPL PPV \u2c7d\u1d35\u1d3e #######",
+        "EPL 01:",
+        "EPL 01:",
+        "EPL 01:"
+      ]
+    },
+    "UK| VIDIO EPL PPV": {
+      "count": 36,
+      "sample": [
+        "##### VIDIO EPL PPV ######",
+        "UK: VIDIO EVENT 1",
+        "UK: VIDIO EVENT 2",
+        "UK: VIDIO EVENT 3"
+      ]
+    },
+    "US| CW \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 35,
+      "sample": [
+        "##### CW \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: CW HD",
+        "US: CW (KOCB)",
+        "US: CW (KSTW)"
+      ]
+    },
+    "UK| LIVE FOOTBALL PPV": {
+      "count": 35,
+      "sample": [
+        "##### LIVE FOOTBALL PPV #####",
+        "Live Football 01 : Kosovo v Israel 14:00 pm",
+        "Live Football 02 : Norway vs Wales 17:00 pm",
+        "Live Football 03 : Georgia vs Hungary 17:00 pm"
+      ]
+    },
+    "US| NBA PPV": {
+      "count": 34,
+      "sample": [
+        "### NBA ATT LIVE EVENTS ###",
+        "NBA: NBA TV HD",
+        "Philadelphia 76ers vs Milwaukee Bucks @ Nov 21 1:00 PM :NBA  01",
+        "NBA 02: Knicks (NYK) x Timberwolves (MIN) start:2025-01-18 00:20:00 stop:2025-01-18 04:20:00"
+      ]
+    },
+    "US| BALLY SPORTS PPV": {
+      "count": 33,
+      "sample": [
+        "##### BALLY SPORTS HD/4K #####",
+        "US: BALLY SPORTS SOUTHWEST PLUS (DALLAS) HD",
+        "US: BALLY SPORTS SOUTHWEST (SAN ANTONIO) HD",
+        "US: BALLY SPORTS SOUTHWEST (DALLAS) HD"
+      ]
+    },
+    "UK| MONO MAX PPV": {
+      "count": 33,
+      "sample": [
+        "##### MONO MAX PPV #####",
+        "UK: MONO MAX EVENT 1",
+        "UK: MONO MAX EVENT 2",
+        "UK: MONO MAX EVENT 3"
+      ]
+    },
+    "US| NHL TEAM PPV": {
+      "count": 32,
+      "sample": [
+        "##### NHL TEAMS #####",
+        "US: ANAHEIM DUCKS",
+        "US: ARIZONA COYOTES",
+        "US: BOSTON BRUINS"
+      ]
+    },
+    "CA| GENERAL FR": {
+      "count": 32,
+      "sample": [
+        "######## GENERAL FR ########",
+        "CA FR: CANAL M FM",
+        "CA FR: EMCI TV (FR)",
+        "CA FR: ES1 CANADA"
+      ]
+    },
+    "UK| SKY STORE \u1d3f\u1d2c\u1d42": {
+      "count": 32,
+      "sample": [
+        "##### SKY STORE #####",
+        "UK: SKY STORE INFO \u1d3f\u1d2c\u1d42",
+        "UK: SKY STORE PREMIERE 1 \u1d3f\u1d2c\u1d42",
+        "UK: SKY STORE PREMIERE 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| NETFLIX ORIGINAL \u1d3f\u1d2c\u1d42": {
+      "count": 32,
+      "sample": [
+        "##### NETFLIX SERIES ORIGINAL \u1d3f\u1d2c\u1d42 #####",
+        "UK: NETFLIX SERIES INFO \u1d3f\u1d2c\u1d42",
+        "UK: NETFLIX SERIES 1 \u1d3f\u1d2c\u1d42",
+        "UK: NETFLIX SERIES 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| EPL PREMIER LEAGUE PPV": {
+      "count": 32,
+      "sample": [
+        "##### PREMIER LEAGUE #####",
+        "UK: EPL beIN ENGLISH 1 STABLE",
+        "UK: EPL beIN ENGLISH 2 STABLE",
+        "UK: EPL MANCHESTER UTD"
+      ]
+    },
+    "US| VIAPLAY NHL PPV": {
+      "count": 31,
+      "sample": [
+        "####### VIAPLAY NHL PPV #######",
+        "ENDED | NHL NHL ON THE FLY | Sat 21 Nov 06:00 EST (US) | 8K EXCLUSIVE | US: VIAPLAY PPV 1",
+        "NEXT | NHL CALGARY - CHICAGO (ENG) | Sat 21 Nov 15:05 EST (US) | 8K EXCLUSIVE | US: VIAPLAY PPV 2",
+        "NEXT | NHL CALGARY - CHICAGO (SE) | Sat 21 Nov 15:05 EST (US) | 8K EXCLUSIVE | US: VIAPLAY PPV 3"
+      ]
+    },
+    "UK| HBO MAX PPV": {
+      "count": 31,
+      "sample": [
+        "##### HBO MAX PPV #####",
+        "UK: HBO MAX PPV 1",
+        "UK: HBO MAX PPV 2",
+        "UK: HBO MAX PPV 3"
+      ]
+    },
+    "UK| MXGP PPV": {
+      "count": 31,
+      "sample": [
+        "####### MXGP PPV #######",
+        "NEXT | SUPERCROSS DE PARIS DAY 1 | Sat 21 Nov 18:00 UTC (UK) | 8K EXCLUSIVE | UK: MXGP PPV 1",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | UK: MXGP PPV 2",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | UK: MXGP PPV 3"
+      ]
+    },
+    "UK| VOLLEY BALL WORLD PPV": {
+      "count": 31,
+      "sample": [
+        "####### VOLLEY PPV #######",
+        "NEXT | WILBERFORCE STRIKERS FC VS. DIAMOND STARS FC | Fri 30 Oct 12:15 EDT (US) | 8K EXCLUSIVE | US: FIFA+ PPV 121",
+        "NEXT | CAILUNGO VS. JUVENES/DOGANA | Fri 30 Oct 16:15 EDT (US) | 8K EXCLUSIVE | US: FIFA+ PPV 122",
+        "NEXT | NORTH VILLAGE RAMS VS. SOMERSET TROJANS | Fri 30 Oct 19:00 EDT (US) | 8K EXCLUSIVE | US: FIFA+ PPV 123"
+      ]
+    },
+    "IE| SETANTA PPV": {
+      "count": 31,
+      "sample": [
+        "### SETANTA PPV ###",
+        "Setanta | Event 1",
+        "Setanta | Event 2",
+        "Setanta | Event 3"
+      ]
+    },
+    "AR| STARZ PLAY 4K \u25b6 \u0633\u062a\u0627\u0631\u0632 \u0628\u0644\u0627\u064a": {
+      "count": 31,
+      "sample": [
+        "#### STARZ PLAY TURKISH ####",
+        "AR: \u0627\u0644\u0645\u0644\u062d\u0645\u0629",
+        "AR: \u0647\u0630\u0627 \u0627\u0644\u0639\u0627\u0644\u0645 \u0644\u0627 \u064a\u0633\u0639\u0646\u064a",
+        "AR: \u0623\u0637\u0631\u0642 \u0628\u0627\u0628\u064a"
+      ]
+    },
+    "UK| FORMULA 1 PPV": {
+      "count": 27,
+      "sample": [
+        "##### FORMULA 1 #####",
+        "F1: F1-TV",
+        "F1: F1-DATA",
+        "F1: F1-TV TEMPORERY"
+      ]
+    },
+    "US| MATCHROOM PPV": {
+      "count": 26,
+      "sample": [
+        "### MATCHROOM PPV ###",
+        "Matchroom Event 00: British Open 2024 - Day 2 - T1 | The Centaur, Cheltenham | snooker | Tue 24 Sep 9:00:00 AM",
+        "Matchroom Event 01: British Open 2024 - Day 2 - T2 | The Centaur, Cheltenham | snooker | Tue 24 Sep 9:00:00 AM",
+        "Matchroom Event 02: British Open 2024 - Day 3 - T1 | The Centaur, Cheltenham | snooker | Wed 25 Sep 9:00:00 AM"
+      ]
+    },
+    "UK| SPFL/SCOTTISH PPV": {
+      "count": 26,
+      "sample": [
+        "### SPFL PPV ###",
+        "SPFL: ST. MIRREN FC",
+        "SPFL: ST. JOHNSTONE FC",
+        "SPFL: ROSS COUNTY FC"
+      ]
+    },
+    "UK| PSF PPV": {
+      "count": 26,
+      "sample": [
+        "####### PSF PPV #######",
+        "PSF01 | 12:00 Liverpool vs Como // 18:00 Liverpool vs Como",
+        "PSF02 | 14:00 Nottingham Forest vs Brest",
+        "PSF03 | 16:00 Newcastle United vs Strasbourg"
+      ]
+    },
+    "UK| MC VIDEO \u1d34\u1d30": {
+      "count": 25,
+      "sample": [
+        "####### MC VIDEO \u1d34\u1d30 #######",
+        "UK: Y2K - DIRECT \u1d34\u1d30",
+        "UK: TROPICALES - DIRECT \u1d34\u1d30",
+        "UK: TODDLER TUNES - DIRECT \u1d34\u1d30"
+      ]
+    },
+    "UK| CHAMPIONSHIP PPV": {
+      "count": 25,
+      "sample": [
+        "###### CHAMP PPV ######",
+        "CHAMP: BURNLEY",
+        "CHAMP: WREXHAM",
+        "CHAMP: WOLVERHAMPTON WANDERERS"
+      ]
+    },
+    "UK| LEAGUE ONE PPV": {
+      "count": 25,
+      "sample": [
+        "###### L1 PPV ######",
+        "L1: WYCOMBE WANDERERS",
+        "L1: WIGAN ATHLETIC",
+        "L1: STOCKPORT COUNTY"
+      ]
+    },
+    "UK| LEAGUE TWO PPV": {
+      "count": 25,
+      "sample": [
+        "###### L2 PPV ######",
+        "L2: YORK CITY",
+        "L2: WALSALL",
+        "L2: TRANMERE ROVERS"
+      ]
+    },
+    "AR| NETFLIX MOVIES 4K \u25b6 \u0623\u0641\u0644\u0627\u0645 \u0646\u062a\u0641\u0644\u064a\u0643\u0633": {
+      "count": 25,
+      "sample": [
+        "##### NETFLIX \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e #####",
+        "AR: NETFLIX MOVIES 1 \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e",
+        "###### NETFLIX \u1d3f\u1d2c\u1d42 ######",
+        "AR: NETFLIX PRO STAND UP COMEDY \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| MOVIES \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 23,
+      "sample": [
+        "#### MOVIES \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ####",
+        "US: EPIX 2",
+        "US: SHOWTIME EAST HD",
+        "US: PETER GRIFFIN 24H"
+      ]
+    },
+    "UK| MUSIC \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 23,
+      "sample": [
+        "#### MUSIC HD/4K ####",
+        "UK: MTV 4K",
+        "UK: MTV BASE",
+        "UK: MTV DANCE"
+      ]
+    },
+    "UK| LA LIGA TEAM PPV": {
+      "count": 23,
+      "sample": [
+        "### LA LIGA TEAM PPV ###",
+        "UK: LA LIGA - REAL MADRID",
+        "UK: LA LIGA - BARCELONA",
+        "UK: LA LIGA - ATLETICO MADRID"
+      ]
+    },
+    "US| NHL PPV": {
+      "count": 22,
+      "sample": [
+        "###### NHL HD/4K ######",
+        "US: NHL ALTERNATE",
+        "US: NHL NETWORK",
+        "NHL  |  4K -"
+      ]
+    },
+    "CA| NEWS EN": {
+      "count": 22,
+      "sample": [
+        "##### CANADA NEWS ENGLISH #####",
+        "CA EN: GLOBAL NEWS CALGARY HD",
+        "CA EN: GLOBAL NEWS EDMONTON HD",
+        "CA EN: GLOBAL NEWS KINGSTON HD"
+      ]
+    },
+    "AR| NEWS 4K \u25b6 \u0627\u0644\u0627\u062e\u0628\u0627\u0631": {
+      "count": 22,
+      "sample": [
+        "###### NEWS TV ######",
+        "AR: Al Arabiya HD",
+        "AR: Al Arabiya 4K",
+        "AR: Al Arabiya Hadath HD"
+      ]
+    },
+    "US| \ufe0fHULU NETWORK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 21,
+      "sample": [
+        "### \ufe0fHULU ORIGINALS \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: HULU ORIGINALS INFO \u1d34\u1d30",
+        "US: HULU ORIGINALS 1 \u1d34\u1d30",
+        "US: HULU ORIGINALS 2 \u1d34\u1d30"
+      ]
+    },
+    "US| APPLE TV F1 PPV": {
+      "count": 21,
+      "sample": [
+        "#### APPLE TV F1 PPV ####",
+        "NEXT | LAS VEGAS: RACE | Sat 21 Nov 21:50 EST (US) | 8K EXCLUSIVE | US: APPLE TV F1 PPV 1",
+        "NEXT | QATAR: RACE | Sun 29 Nov 09:50 EST (US) | 8K EXCLUSIVE | US: APPLE TV F1 PPV 2",
+        "NEXT | ABU DHABI: RACE | Sun 06 Dec 06:50 EST (US) | 8K EXCLUSIVE | US: APPLE TV F1 PPV 3"
+      ]
+    },
+    "US| MLS PPV": {
+      "count": 21,
+      "sample": [
+        "##### MLS PPV #####",
+        "MLS Countdown @ Nov 21 1:15 PM :MLS  01",
+        "New England Revolution vs Philadelphia Union @ Nov 21 2:00 PM :MLS  02",
+        "FC Dallas vs Portland Timbers @ Nov 21 3:30 PM :MLS  03"
+      ]
+    },
+    "US| NBA PASS PPV \u2078\u1d37": {
+      "count": 21,
+      "sample": [
+        "##### NBA PASS PPV \u2078\u1d37 #####",
+        "NEXT | PHI - 76ERS VS MIL - BUCKS | Sat 21 Nov 12:00 EST (US) | 8K EXCLUSIVE | US: NBA PASS PPV 1",
+        "NEXT | NYK - KNICKS VS POR - TRAIL BLAZERS | Sat 21 Nov 18:30 EST (US) | 8K EXCLUSIVE | US: NBA PASS PPV 2",
+        "NEXT | SAS - SPURS VS NOP - PELICANS | Sat 21 Nov 19:00 EST (US) | 8K EXCLUSIVE | US: NBA PASS PPV 3"
+      ]
+    },
+    "US| PEACOCK PPV \u207d\u1d2e\u1d37\u207e": {
+      "count": 21,
+      "sample": [
+        "##### PEACOCK PPV  \u207d\u1d2e\u1d37\u207e #####",
+        "US: PEACOCK PPV 1",
+        "US: PEACOCK PPV 2",
+        "US: PEACOCK PPV 3"
+      ]
+    },
+    "US| FLO RACING PPV": {
+      "count": 21,
+      "sample": [
+        "##### FLO RACING PPV #####",
+        "PBR RidePass :Flo Racing  01",
+        "USAC Chase Johnson Classic at Merced @ Nov 21 4:45 PM :Flo Racing  02",
+        "Snowball Derby Preview at 5 Flags @ Nov 21 5:00 PM :Flo Racing  03"
+      ]
+    },
+    "US| GOLF PPV": {
+      "count": 21,
+      "sample": [
+        "####### GOLF PPV #######",
+        "PGA Tour: The RSM Classic Koepka & Brennan Featured Groups Second Round @ Nov 20 8:30 AM :Golf  01",
+        ":Golf  02",
+        ":Golf  03"
+      ]
+    },
+    "UK| APPLE TV F1 PPV": {
+      "count": 21,
+      "sample": [
+        "#### APPLE TV F1 PPV ####",
+        "NEXT | LAS VEGAS: RACE | Sun 22 Nov 02:50 UTC (UK) | 8K EXCLUSIVE | UK: APPLE TV F1 PPV 1",
+        "NEXT | QATAR: RACE | Sun 29 Nov 14:50 UTC (UK) | 8K EXCLUSIVE | UK: APPLE TV F1 PPV 2",
+        "NEXT | ABU DHABI: RACE | Sun 06 Dec 11:50 UTC (UK) | 8K EXCLUSIVE | UK: APPLE TV F1 PPV 3"
+      ]
+    },
+    "UK| SERIE A TEAM PPV": {
+      "count": 21,
+      "sample": [
+        "### SERIE A TEAM PPV ###",
+        "UK: SERIE A - JUVENTUS 4K",
+        "UK: SERIE A - INTER MILAN 4K",
+        "UK: SERIE A - AC MILAN 4K"
+      ]
+    },
+    "UK| EU GAME PASS PPV": {
+      "count": 21,
+      "sample": [
+        "####### EU GAME PASS PPV #######",
+        "UK: EU GAME PASS PPV 1 - ELF 24/7: ALL GAMES OF SEASON 2024 RELIVE | Tue 16 Apr 11:19",
+        "UK: EU GAME PASS 2 - NO EVENT STREAMING -",
+        "UK: EU GAME PASS 3 - NO EVENT STREAMING -"
+      ]
+    },
+    "UK| RALLY PPV": {
+      "count": 21,
+      "sample": [
+        "####### RALLY PPV #######",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | UK: RALLY PPV 1",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | UK: RALLY PPV 2",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | UK: RALLY PPV 3"
+      ]
+    },
+    "US| NFL PPV": {
+      "count": 20,
+      "sample": [
+        "##### NFL LIVE EVENTS #####",
+        "US: NFL NETWORK \u1d34\u1d30",
+        "US: NFL REDZONE \u1d34\u1d30",
+        "NFL   | 4k - SNF 8:20pm Vikings at 49ers"
+      ]
+    },
+    "UK| BBC STREAM PPV": {
+      "count": 20,
+      "sample": [
+        "##### BBC STREAM PPV #####",
+        "UK: BBC STREAM 1",
+        "UK: BBC STREAM 2",
+        "UK: BBC STREAM 3"
+      ]
+    },
+    "US| HBO MAX NETWORK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 19,
+      "sample": [
+        "### HBO ORIGINAL \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: HBO MAX ORIGINAL INFO \u1d3f\u1d2c\u1d42",
+        "US: HBO MAX ORIGINAL 1 \u1d3f\u1d2c\u1d42",
+        "US: HBO MAX ORIGINAL 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| MLB PPV": {
+      "count": 19,
+      "sample": [
+        "###### MLB -1 PPV ######",
+        "MLB 01 |  Brewers x Rays start:2026-10-28 00:00:00 stop:2026-10-28 07:13:20",
+        "MLB 02 : Brewers x Dodgers start:2026-10-16 01:00:00 stop:2026-10-16 08:13:20",
+        "MLB 03 :"
+      ]
+    },
+    "CA| GENERAL EN": {
+      "count": 19,
+      "sample": [
+        "CA EN: BBC CANADA HD (CA)",
+        "CA EN: CNBC HD",
+        "CA EN: CNN HD",
+        "CA EN: CTV VANCOUVER HD"
+      ]
+    },
+    "UK| REALITY SHOW TV \u1d3f\u1d2c\u1d42": {
+      "count": 19,
+      "sample": [
+        "##### REALITY SHOW TV \u1d3f\u1d2c\u1d42 #####",
+        "UK: REALITY SHOW INFO \u1d3f\u1d2c\u1d42",
+        "UK: REALITY SHOW 1 \u1d3f\u1d2c\u1d42",
+        "UK: REALITY SHOW 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| TNT SPORT EVENT": {
+      "count": 19,
+      "sample": [
+        "####### TNT SPORTS EVENT #######",
+        "UK: TNT SPORTS EVENT 1",
+        "UK: TNT SPORTS EVENT 2",
+        "UK: TNT SPORTS EVENT 3"
+      ]
+    },
+    "AR| NETFLIX SERIES 4K \u25b6 \u0645\u0633\u0644\u0633\u0644\u0627\u062a \u0646\u062a\u0641\u0644\u064a\u0643\u0633": {
+      "count": 19,
+      "sample": [
+        "#### NETFLIX SERIES 4K ####",
+        "AR: Resident Evil 4K",
+        "AR: The 7 Lives of Lea 4K",
+        "AR: The Big Shot Game Show 4K"
+      ]
+    },
+    "AR| \ufe0fTOD 4K \u25b6 \u062a\u0648\u062f \u0627\u0644\u0623\u0635\u0644\u064a\u0647": {
+      "count": 19,
+      "sample": [
+        "##### TOD 4K #####",
+        "AR: TOD UNA 4K",
+        "AR: TOD DOS 4K",
+        "AR: TOD TRES 4K"
+      ]
+    },
+    "US| NHL REPLAY": {
+      "count": 18,
+      "sample": [
+        "###  NHL LEAGUE REPLAY  ###",
+        "US: NHL REPLAY INFO HD",
+        "US: NHL REPLAY HIGHLIGHTS HD",
+        "US: NHL REPLAY 1 HD"
+      ]
+    },
+    "UK| SKY MIX SERIES \u1d3f\u1d2c\u1d42": {
+      "count": 18,
+      "sample": [
+        "###### SKY MIX SERIES \u1d3f\u1d2c\u1d42 ######",
+        "UK: SKY MIX SERIES INFO \u1d3f\u1d2c\u1d42",
+        "UK: SKY MIX SERIES 1 \u1d3f\u1d2c\u1d42",
+        "UK: SKY MIX SERIES 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| NFL REPLAY": {
+      "count": 17,
+      "sample": [
+        "###### NFL REPLAY  ######",
+        "US: NFL REPLAY INFO HD",
+        "US: NFL REPLAY HIGHLIGHTS HD",
+        "US: NFL REPLAY 1 HD"
+      ]
+    },
+    "US| RUGBY PPV": {
+      "count": 17,
+      "sample": [
+        "### RUGBY PPV ###",
+        "Rugby 1: Bristol vs Northampton 03:05pm",
+        "Rugby 2 :Gloucester vs Harlequins 5:30 pm",
+        "Rugby 3: Newcastle vs Leicester 7:45 pm"
+      ]
+    },
+    "UK| SKY MIX DOCS \u1d3f\u1d2c\u1d42": {
+      "count": 17,
+      "sample": [
+        "####### SKY MIX DOCS \u1d3f\u1d2c\u1d42 #######",
+        "UK: SKY MIX DOCS INFO \u1d3f\u1d2c\u1d42",
+        "UK: SKY MIX DOCS 1 \u1d3f\u1d2c\u1d42",
+        "UK: SKY MIX DOCS 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| TNT SPORT SD \u2c7d\u1d35\u1d3e": {
+      "count": 17,
+      "sample": [
+        "####### TNT SPORT SD #######",
+        "VIP: TNT SPORT MOSAIC SD",
+        "VIP: TNT SPORT 5 SD",
+        "VIP: TNT SPORT 6 SD"
+      ]
+    },
+    "UK| TRILLER TV PPV": {
+      "count": 17,
+      "sample": [
+        "### TRLLER TV PPV ###",
+        "Fite TV | 24/7",
+        "Triller 01 :",
+        "Triller TV | Event 2"
+      ]
+    },
+    "UK| CYMRU FOOTBALL PPV": {
+      "count": 17,
+      "sample": [
+        "#### CYMRU FOOTBALL PPV ####",
+        "UK: CYMRU FOOTBALL 1",
+        "UK: CYMRU FOOTBALL 2",
+        "UK: CYMRU FOOTBALL 3"
+      ]
+    },
+    "US| WNBA TEAM PPV": {
+      "count": 16,
+      "sample": [
+        "####### WNBA TEAM PPV #######",
+        "US: WNBA NEW YORK LIBERTY",
+        "US: WNBA LAS VEGAS ACES",
+        "US: WNBA CHICAGO SKY"
+      ]
+    },
+    "CA| KIDS FR": {
+      "count": 16,
+      "sample": [
+        "######## KIDS FR ########",
+        "CA FR: BABY TV",
+        "CA FR: ICI TELE ACADIE HD",
+        "CA FR: ICI TELE ALBERTA HD"
+      ]
+    },
+    "UK| ITV X VIP": {
+      "count": 16,
+      "sample": [
+        "####### ITV X VIP #######",
+        "UK: ALL ACTION MOVIES CHANNEL \u1d34\u1d30",
+        "UK: COMEDY 24/7 \u1d34\u1d30",
+        "UK: ITV 1 \u1d34\u1d30"
+      ]
+    },
+    "UK| KIDS \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 16,
+      "sample": [
+        "#### KIDS HD/4K ####",
+        "UK: DISNEY JR",
+        "UK: NICK TOONS",
+        "UK: NICK JUNIOR TOO"
+      ]
+    },
+    "UK| SPORT \u1d3f\u1d2c\u1d42": {
+      "count": 16,
+      "sample": [
+        "##### SPORTS \u1d3f\u1d2c\u1d42 #####",
+        "UK: SKY SPORTS MAIN EVENTS \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e",
+        "UK: SKY SPORTS DARTS  \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e",
+        "UK: SKY SPORTS 1 \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e"
+      ]
+    },
+    "IE| LOI PPV": {
+      "count": 16,
+      "sample": [
+        "###### LOI PPV ######",
+        "LOI TV 2 |",
+        "LOI TV 1 |",
+        "LOI TV 3 |"
+      ]
+    },
+    "IE| GAAGO++ PPV": {
+      "count": 16,
+      "sample": [
+        "####### GAAGO++ PPV #######",
+        "Gaa++ Fixtures 01: Clann Eireann v Culloville 19:30 ( 100% not Guaranteed )",
+        "Gaa++ Fixtures 02:",
+        "Gaa++ Fixtures 03:"
+      ]
+    },
+    "AR| NETFLIX GERMANY 4K \u25b6 \u0646\u062a\u0641\u0644\u064a\u0643\u0633 \u0623\u0644\u0645\u0627\u0646\u064a": {
+      "count": 16,
+      "sample": [
+        "###### NETFLIX GERMANY ######",
+        "AR: NETFLIX DE 1 4K",
+        "AR: NETFLIX DE 2 4K",
+        "AR: NETFLIX DE 3 4K"
+      ]
+    },
+    "UK| FLORUGBY PPV": {
+      "count": 15,
+      "sample": [
+        "#### FLORUGBY PPV ####",
+        "Florugby 00",
+        "Florugby 01",
+        "Florugby 02"
+      ]
+    },
+    "AR| \ufe0fVIVO 4K \u25b6 \ufe0f\u0641\u064a\u0641\u0648": {
+      "count": 15,
+      "sample": [
+        "##### VIVO 4K #####",
+        "AR: VIVO LIVE 4K",
+        "AR: VIVO CINEMA 4K",
+        "AR: VIVO CLUB 4K"
+      ]
+    },
+    "US| DISNEY+ NETWORK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 14,
+      "sample": [
+        "## DISNEY+ ORIGINAL \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "US: DISNEY+ SERIES INFO \u1d3f\u1d2c\u1d42",
+        "US: DISNEY+ PREMIERE 1 \u1d3f\u1d2c\u1d42",
+        "US: DISNEY+ PREMIERE 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| PEACOCK NETWORK \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 13,
+      "sample": [
+        "### PEACOCK SERIE ORIGINAL \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ###",
+        "US: PEACOCK ORIGINAL INFO \u1d3f\u1d2c\u1d42",
+        "US: PEACOCK ORIGINAL 1 \u1d3f\u1d2c\u1d42",
+        "US: PEACOCK ORIGINAL 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "US| B/R MAX SPORTS PPV": {
+      "count": 13,
+      "sample": [
+        "##### B/R MAX SPORTS PPV #####",
+        "US: B/R MAX SPORTS EVENTS 1 \u1d34\u1d30",
+        "US: B/R MAX SPORTS EVENTS 2 \u1d34\u1d30",
+        "US: B/R MAX SPORTS EVENTS 3 \u1d34\u1d30"
+      ]
+    },
+    "CA| DOCUMENTARY FR": {
+      "count": 13,
+      "sample": [
+        "######## DOCUMENTARY FR ########",
+        "CA FR: AHC",
+        "CA FR: AMI TELE HD",
+        "CA FR: CANAL V"
+      ]
+    },
+    "UK| HUB PREMIER PPV": {
+      "count": 13,
+      "sample": [
+        "### HUB PREMIER PPV ###",
+        "HUB PREMIER 2 \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e",
+        "HUB PREMIER 1 4K",
+        "HUB PREMIER 2 4K"
+      ]
+    },
+    "AR| \ufe0fACTORS 4K \u25b6 \u0627\u0644\u0641\u0646\u0627\u0646\u0648\u0646": {
+      "count": 13,
+      "sample": [
+        "##### ACTORS 4K #####",
+        "AR: \u062f\u0631\u064a\u062f \u0644\u062d\u0627\u0645",
+        "AR: \u0647\u0627\u0646\u064a \u0631\u0645\u0632\u064a",
+        "AR: 1 \u0639\u0627\u062f\u0644 \u0627\u0645\u0627\u0645"
+      ]
+    },
+    "US| PARAMOUNT+ ORIGINAL \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 12,
+      "sample": [
+        "## PARAMOUNT+ ORIGINAL \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ##",
+        "US: PARAMOUNT+ ORIGINAL INFO \u1d34\u1d30",
+        "US: PARAMOUNT+ ORIGINAL 1 \u1d34\u1d30",
+        "US: PARAMOUNT+ ORIGINAL 2 \u1d34\u1d30"
+      ]
+    },
+    "US| UFC PPV": {
+      "count": 12,
+      "sample": [
+        "###### UFC PPV #######",
+        "UFC event: 0 name: SHURIKEN FIGHT SERIES 25 start:2026-11-21 08:25:00 stop:2026-11-21 12:30:00",
+        "UFC event: 1 name: UFC FIGHT NIGHT: PROCHAZKA VS STIRLING  start:2026-11-21 18:55:00 stop:2026-11-21 22:00:00",
+        "UFC event: 2 name: WOW 34 start:2026-11-21 20:55:00 stop:2026-11-22 02:00:00"
+      ]
+    },
+    "CA| CINEMA FR": {
+      "count": 12,
+      "sample": [
+        "######## CINEMA FR ########",
+        "CA FR: CANAL Z HD",
+        "CA FR: CINEPOP HD",
+        "CA FR: ENGLISH CLUB TV"
+      ]
+    },
+    "CA| MUSIC FR": {
+      "count": 12,
+      "sample": [
+        "######## MUSIC FR ########",
+        "CA FR: ARTV",
+        "CA FR: ICI ARTV HD",
+        "CA FR: MEZZO LIVE HD"
+      ]
+    },
+    "CA| FUBO PPV \u1d3f\u1d2c\u1d42": {
+      "count": 12,
+      "sample": [
+        "####### FUBO PPV \u1d3f\u1d2c\u1d42 #######",
+        "CA: FUBO PPV SPORTS \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e",
+        "CA: FUBO PPV SPORTS 1 \u1d3f\u1d2c\u1d42",
+        "CA: FUBO PPV SPORTS 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| APPLE TV+ SERIES \u1d3f\u1d2c\u1d42": {
+      "count": 12,
+      "sample": [
+        "##### APPLE TV+ \u1d3f\u1d2c\u1d42 #####",
+        "UK: APPLE TV+ SERIES INFO \u1d3f\u1d2c\u1d42",
+        "UK: APPLE TV+ SERIES 1 \u1d3f\u1d2c\u1d42",
+        "UK: APPLE TV+ SERIES 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| PRIME VIDEO SERIES \u1d3f\u1d2c\u1d42": {
+      "count": 12,
+      "sample": [
+        "##### PRIME VIDEO SERIES \u1d3f\u1d2c\u1d42 #####",
+        "UK: PRIME VIDEO SERIE INFO \u1d3f\u1d2c\u1d42",
+        "UK: PRIME VIDEO SERIE 1 \u1d3f\u1d2c\u1d42",
+        "UK: PRIME VIDEO SERIE 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| SPORT \u1d3f\u1d2c\u1d42 \u2c7d\u1d35\u1d3e \u1d30\u1d3c\u1d38\u1d2e\u02b8 \u1d2c\u1d41\u1d30\u1d35\u1d3c": {
+      "count": 12,
+      "sample": [
+        "####### SKY SPORTS \u2074\u1d4f & \u00b3\u2078\u2074\u2070\u1d3e #######",
+        "VIP: SKY SPORTS 1 \u2074\u1d4f & \u00b3\u2078\u2074\u2070\u1d3e",
+        "VIP: SKY SPORTS 2 \u2074\u1d4f & \u00b3\u2078\u2074\u2070\u1d3e",
+        "####### SKY SPORTS \u1d3f\u1d2c\u1d42 #######"
+      ]
+    },
+    "UK| UFC PPV": {
+      "count": 12,
+      "sample": [
+        "###### UFC PPV #######",
+        "UFC event: 0 name: SHURIKEN FIGHT SERIES 25 start:2026-11-21 08:25:00 stop:2026-11-21 12:30:00",
+        "UFC event: 1 name: UFC FIGHT NIGHT: PROCHAZKA VS STIRLING  start:2026-11-21 18:55:00 stop:2026-11-21 22:00:00",
+        "UFC event: 2 name: WOW 34 start:2026-11-21 20:55:00 stop:2026-11-22 02:00:00"
+      ]
+    },
+    "IE| GAAGO PPV": {
+      "count": 12,
+      "sample": [
+        "##### GAAGO PPV #####",
+        "GaaGo 01: Armagh: Dromintee v St Patrick's  7:15pm",
+        "GaaTv02: Ulster: Scotstown v Magherafelt   1:30pm",
+        "GaaTv 03: Ulster: Erne Gaels v St Eunans 5pm"
+      ]
+    },
+    "AR| \ufe0fHULU 4K \u25b6 \ufe0f\u0647\u0648\u0644\u0648": {
+      "count": 12,
+      "sample": [
+        "##### HULU 4K #####",
+        "AR: HULU ADVENTURE 4K",
+        "AR: HULU COMEDY 4K",
+        "AR: HULU CRIME 4K"
+      ]
+    },
+    "US| WNBA PPV": {
+      "count": 11,
+      "sample": [
+        "####### WNBA PPV #######",
+        "wnba: 1 name: Golden State Valkyries x Atlanta Dream start:2026-10-31 23:50:00 stop:2026-11-01 04:00:00",
+        "wnba: 02 name:",
+        "WNBA 03 :"
+      ]
+    },
+    "US| DIRTVISION PPV": {
+      "count": 11,
+      "sample": [
+        "### DIRTVISION PPV HD/4K ###",
+        "Dirtvision Now | 24/7",
+        "DIRTVISION 01 : Volusia Speedway Park 6:00 pm",
+        "DIRTVISION 02 :"
+      ]
+    },
+    "UK| GENERAL \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 11,
+      "sample": [
+        "#### GENERAL HD/4K ####",
+        "UK: CHANNEL 4 4K \u25c9",
+        "UK: BBC Brit HD",
+        "UK: BBC ONE CAMBRIDGE \u25c9"
+      ]
+    },
+    "UK| CINE PRO 4K": {
+      "count": 11,
+      "sample": [
+        "##### UK CINE PRO 4K #####",
+        "UK: AMC + 4K",
+        "UK: BET+ 4K",
+        "UK: DEKKOO 4K"
+      ]
+    },
+    "UK| PREMIER LEAGUE+ PPV": {
+      "count": 11,
+      "sample": [
+        "##### PREMIER LEAGUE+ PPV #####",
+        "UK: PREMIER LEAGUE+ 1",
+        "UK: PREMIER LEAGUE+ 2",
+        "UK: PREMIER LEAGUE+ 3"
+      ]
+    },
+    "UK| LIGUE 1 PPV": {
+      "count": 11,
+      "sample": [
+        "##### LIGUE 1 PPV #####",
+        "UK: LIGUE 1 PPV | MATCH 1",
+        "UK: LIGUE 1 PPV | MATCH 2",
+        "UK: LIGUE 1 PPV | MATCH 3"
+      ]
+    },
+    "UK| FA PLAYER PPV": {
+      "count": 11,
+      "sample": [
+        "##### UK FA PLAYER PPV #####",
+        "FA Player 01 : Chelsea vs Manchester United // UK Sun 18 May 1:30pm // ET Sun 18 May 8:30am",
+        "FA Player 02 : Chelsea vs Crystal Palace // UK Sun 9 Mar 3:30pm // ET Sun 9 Mar 10:30am",
+        "FA Player 03 : Arsenal vs Liverpool // UK Sun 9 Mar 3:30pm // ET Sun 9 Mar 10:30am"
+      ]
+    },
+    "UK| ULTIMATE POOL PPV": {
+      "count": 11,
+      "sample": [
+        "##### ULTIMATE POOL PPV #####",
+        "NEXT | 23RD NOVEMBER 2026 MIXED PAIRS - WEEK 4 | Mon 23 Nov 18:00 UTC (UK) | 8K EXCLUSIVE | UK: ULTIMATE POOL PPV 1",
+        "NEXT | 30TH NOVEMBER 2026 MIXED PAIRS - WEEK 5 | Mon 30 Nov 18:00 UTC (UK) | 8K EXCLUSIVE | UK: ULTIMATE POOL PPV 2",
+        "- NO EVENT STREAMING - | 8K EXCLUSIVE | UK: ULTIMATE POOL PPV 3"
+      ]
+    },
+    "IE| ULSTER GAA PPV": {
+      "count": 11,
+      "sample": [
+        "####### ULSTER GAA PPV #######",
+        "ULSTER GAA 01 |",
+        "ULSTER GAA 03 |",
+        "ULSTER GAA 04 |"
+      ]
+    },
+    "AR| \ufe0fHBO 4K \u25b6 \u0627\u062a\u0634 \u0628\u064a \u0627\u0648": {
+      "count": 11,
+      "sample": [
+        "##### HBO 4K #####",
+        "AR: HBO TOP TEN 4K",
+        "AR: HBO NOW MOVIES 4K",
+        "AR: HBO ACTION 4K"
+      ]
+    },
+    "UK| BBC IPLAYER SERIES \u1d3f\u1d2c\u1d42": {
+      "count": 10,
+      "sample": [
+        "##### BBC IPLAYER SERIES \u1d3f\u1d2c\u1d42 #####",
+        "UK: BBC IPLAYER SERIES INFO \u1d3f\u1d2c\u1d42",
+        "UK: BBC IPLAYER SERIES 1 \u1d3f\u1d2c\u1d42",
+        "UK: BBC IPLAYER SERIES 2 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| NOW TV ENTERTAINMENT \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 9,
+      "sample": [
+        "## NOW TV ENTERTAINMENT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 ##",
+        "NOW: SKY BOURNE \u1d3f\u1d2c\u1d42",
+        "NOW: SKY BOURNE \u1d34\u1d30",
+        "NOW: SKY CINEMA PREMIERE \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| PDC BOARD PPV": {
+      "count": 9,
+      "sample": [
+        "##### PDC BOARD PPV #####",
+        "PDC Event1 name: 2026 Grand Slam of Darts | Day 8 - Evening Session Watch live the 2026 Grand Slam of Darts start:2026-11-21 19:00:00 stop:2026-11-21 23:30:00",
+        "PDC Event 02 :",
+        "PDC Board 03 :"
+      ]
+    },
+    "IE| NIFL PREMIERSHIP PPV": {
+      "count": 9,
+      "sample": [
+        "### NIFL PREMIERSHIP PPV ###",
+        "NIFL 1 | Glentoran vs Carrick | Sat 10 3PM",
+        "NIFL 2 | Cliftonville vs Coleraine | Sat 10n 3PM",
+        "NIFL 3 | Dungannon vs Crusaders | Sat 10 3PM"
+      ]
+    },
+    "US| KIDS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 8,
+      "sample": [
+        "##### KIDS \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "US: DISNEY CHANNEL HD",
+        "US: DISNEY CHANNEL WEST HD",
+        "US: DISNEY JR WEST HD"
+      ]
+    },
+    "US| MIAMI \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 8,
+      "sample": [
+        "#### MIAMI \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 ####",
+        "US: ABC (WPLG) Miami (D) HD",
+        "US: CBS 4 (WFOR) Miami (A) HD",
+        "US: CBS (WFOR) Miami Ft Lauderdale (D) HD"
+      ]
+    },
+    "US| THE MASTERS PPV": {
+      "count": 8,
+      "sample": [
+        "###### THE MASTERS PPV ######",
+        "US: THE MASTERS - HOLES 4, 5 & 6 (FIRST ROUND)",
+        "US: THE MASTERS - CBS COVERAGE",
+        "US: THE MASTERS - SKY NEW ZEALAND"
+      ]
+    },
+    "CA| SPORTS FR": {
+      "count": 8,
+      "sample": [
+        "######## SPORTS FR ########",
+        "CA FR: MOI SPORT HD",
+        "CA FR: TSN/RDS EXTRA 1",
+        "CA FR: TSN/RDS EXTRA 2"
+      ]
+    },
+    "UK| SCOTTISH CUP PPV": {
+      "count": 8,
+      "sample": [
+        "##### SCOTTISH CUP PPV #####",
+        "Scottish Cup 1: Celtic 15:00 Dunfermline",
+        "Scottish Cup 2:",
+        "Scottish Cup 3: Celtic vs Hibernian 15.00"
+      ]
+    },
+    "UK| SKY CINEMA \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 7,
+      "sample": [
+        "#### SKY CINEMA HD/4K ####",
+        "UK: SKY CINEMA ACTION 4K",
+        "UK: SKY CINEMA FAMILY 4K",
+        "UK: SKY SHOWCASE 4K"
+      ]
+    },
+    "UK| SKY CINEMA \u02b0\u1d49\u1d5b\u1d9c": {
+      "count": 7,
+      "sample": [
+        "### UK CINEMA HEVC/4K ###",
+        "UK: SKY CINEMA SELECT/FEEL GOOD HEVC 4K",
+        "UK: UK: SKY ONE HEVC 4K",
+        "### UK CINEMA HEVC/HD ###"
+      ]
+    },
+    "UK| DOCUMENTARY \u02b0\u1d49\u1d5b\u1d9c": {
+      "count": 7,
+      "sample": [
+        "### UK DOCUMENTARY HEVC/HD ###",
+        "UK: DISCOVERY HEVC HD",
+        "UK: HISTORY 2 HEVC HD",
+        "### UK DOCUMENTARY HEVC/4K ###"
+      ]
+    },
+    "UK| SUPER LEAGUE PLUS PPV": {
+      "count": 7,
+      "sample": [
+        "###### SUPER LEAGUE PLUS PPV ######",
+        "Super League Plus Event 1 | Leigh Leopards vs Wakefield Trinity // UK Fri 11 Sep 7:50pm // ET Fri 11 Sep 2:50pm",
+        "Super League Plus Event 2 | Saint Helens Rlfc vs Hull Kingston Rovers // UK Fri 11 Sep 7:50pm // ET Fri 11 Sep 2:50pm",
+        "Super League Plus 03 |Warrington Wolves vs Toulouse Olympique // UK Fri 11 Sep 7:50pm // ET Fri 11 Sep 2:50pm"
+      ]
+    },
+    "CA| CFL PPV": {
+      "count": 6,
+      "sample": [
+        "####### CFL #######",
+        "CA | CFL 00\u24e7: Montreal Alouettes vs Hamilton Tiger-Cats | Sat 8th Nov 3:00 PM ET",
+        "CA | CFL 01\u24e7: Saskatchewan Roughriders vs B.C. Lions | Sat 8th Nov 6:30 PM ET",
+        "CA | CFL 02\u24e7: No Scheduled Event"
+      ]
+    },
+    "UK| GENERAL \u02b0\u1d49\u1d5b\u1d9c": {
+      "count": 6,
+      "sample": [
+        "### UK GENERAL HEVC/HD ###",
+        "UK: WATCH HEVC HD",
+        "UK: GOLD HEVC HD",
+        "### UK GENERAL HEVC/4K ###"
+      ]
+    },
+    "UK| KIDS \u02b0\u1d49\u1d5b\u1d9c": {
+      "count": 6,
+      "sample": [
+        "### UK KIDS HEVC/HD ###",
+        "UK: NICK  HEVC HD",
+        "UK: DISNEY JR HD",
+        "UK; Baby TV HEVC 4K"
+      ]
+    },
+    "UK| SPORT \u1d34\u1d30 \u2c7d\u1d35\u1d3e": {
+      "count": 6,
+      "sample": [
+        "####### SKY SPORTS \u1d34\u1d30 #######",
+        "VIP: SKY SPORTS + \u1d34\u1d30",
+        "VIP: LFC TV \u1d34\u1d30",
+        "VIP: MUTV \u1d34\u1d30"
+      ]
+    },
+    "UK| SPORT SD \u2c7d\u1d35\u1d3e": {
+      "count": 6,
+      "sample": [
+        "####### SKY SPORTS SD #######",
+        "VIP: SKY SPORTS + SD",
+        "VIP: LFC TV SD",
+        "VIP: LALIGA TV SD"
+      ]
+    },
+    "UK| SPORT \u02b0\u1d49\u1d5b\u1d9c": {
+      "count": 6,
+      "sample": [
+        "### UK SPORT HEVC/HD ###",
+        "UK: SKY SPORTS TENNIS HEVC HD",
+        "UK: PREMIER SPORTS 1 IRELAND HEVC HD",
+        "UK: PREMIER SPORTS 2 IRELAND HEVC HD"
+      ]
+    },
+    "UK| TT RACES PPV": {
+      "count": 6,
+      "sample": [
+        "####### TT RACES PPV #######",
+        "UK: TT RACES EVENT 1",
+        "UK: TT RACES EVENT 2",
+        "UK: TT RACES EVENT 3"
+      ]
+    },
+    "IE| TYRONE GAA PPV": {
+      "count": 6,
+      "sample": [
+        "####### TYRONE GAA PPV #######",
+        "Tyrone Gaa 01:",
+        "Tyrone Gaa 02:",
+        "Tyrone Gaa 03:"
+      ]
+    },
+    "US| NETFLIX PPV": {
+      "count": 5,
+      "sample": [
+        "####### NETFLIX PPV #######",
+        "NF: NETFLIX 01 (FHD@30FPS) EVENTS ONLY",
+        "NF: NETFLIX 02 (FHD@60FPS) USA EVENTS ONLY",
+        "NF: NETFLIX 03 (FHD@60FPS) INTERNATIONAL EVENTS ONLY"
+      ]
+    },
+    "CA| SPORTS EN": {
+      "count": 5,
+      "sample": [
+        "CA EN: OLYMPIC CHANNEL \u1d3f\u1d2c\u1d42",
+        "CA EN: BEIN SPORTS HD",
+        "CA EN: GOLF CHANNEL HD",
+        "CA EN: SPORTSNET WEST \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| TNT SPORT \u1d3f\u1d2c\u1d42 \u2c7d\u1d35\u1d3e \u1d30\u1d3c\u1d38\u1d2e\u02b8 \u1d2c\u1d41\u1d30\u1d35\u1d3c": {
+      "count": 5,
+      "sample": [
+        "####### TNT SPORT \u1d3f\u1d2c\u1d42 \u2075\u2070 FPS #######",
+        "VIP: TNT SPORTS ULTIMATE \u2074\u1d4f & \u00b3\u2078\u2074\u2070\u1d3e",
+        "####### TNT SPORT \u1d3f\u1d2c\u1d42 #######",
+        "####### TNT SPORT \u1d3f\u1d2c\u1d42 \u02b0\u1d49\u1d5b\u1d9c #######"
+      ]
+    },
+    "UK| NETFLIX PPV": {
+      "count": 5,
+      "sample": [
+        "####### NETFLIX PPV #######",
+        "NF: NETFLIX 01 (FHD@30FPS) EVENTS ONLY",
+        "NF: NETFLIX 02 (FHD@60FPS) USA EVENTS ONLY",
+        "NF: NETFLIX 03 (FHD@60FPS) INTERNATIONAL EVENTS ONLY"
+      ]
+    },
+    "US| SUPERCROSS PPV": {
+      "count": 4,
+      "sample": [
+        "#### SUPERCROSS PPV ####",
+        "Supercross 1:  Race day live - 2024 round 5: detroit, mi // UK Sat 3 Feb 3:30pm // ET Sat 3 Feb 10:30am",
+        "Supercross 2: 2024 round 5: detroit, mi - ford field (feb 3rd) // UK Sat 3 Feb 9:00pm // ET Sat 3 Feb 4:00pm",
+        "Supercross 1:  Race day live - 2024 round 5: detroit, mi // UK Sat 3 Feb 3:30pm // ET Sat 3 Feb 10:30am"
+      ]
+    },
+    "CA| KIDS EN": {
+      "count": 4,
+      "sample": [
+        "CA EN:  DISNEY CHANNEL HD",
+        "CA EN: LUDIKIDS",
+        "CA EN: TREE HOUSE",
+        "CA EN: YTV EAST HD"
+      ]
+    },
+    "UK| DISCOVERY+ \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 4,
+      "sample": [
+        "#### DISCOVERY+ HD/4K ####",
+        "UK: DISCOVERY HISTORY +1",
+        "UK: ID",
+        "UK: DISCOVERY PLUS 4K"
+      ]
+    },
+    "UK| SPORT SD": {
+      "count": 4,
+      "sample": [
+        "##### SPORT SD #####",
+        "UK: SKY SPORTS TENNIS SD",
+        "UK: RMTV SD",
+        "UK: PREMIER SPORTS RUGBY SD"
+      ]
+    },
+    "UK| NEWS \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 3,
+      "sample": [
+        "####### NEWS #######",
+        "UK: CRUISE 1ST  TV",
+        "UK: LA KATC ABC 3"
+      ]
+    },
+    "UK| NOW TV SPORT \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e": {
+      "count": 3,
+      "sample": [
+        "## NOW TV SPORT \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e ##",
+        "NOW: TNT SPORT  \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e",
+        "NOW: SKY SPORTS MAIN EVENT \u1d41\u1d34\u1d30 \u00b3\u2078\u2074\u2070\u1d3e"
+      ]
+    },
+    "UK| SPORT \u1d34\u1d30": {
+      "count": 3,
+      "sample": [
+        "##### SPORT \u1d34\u1d30 #####",
+        "UK: TNT SPORTS 6 \u1d34\u1d30",
+        "UK: PREMIER SPORTS RUGBY  \u1d34\u1d30"
+      ]
+    },
+    "CA| CINEMA EN": {
+      "count": 2,
+      "sample": [
+        "CA EN: RIDE TV HD",
+        "CA EN: TCM"
+      ]
+    },
+    "CA| TSN SPORT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2": {
+      "count": 2,
+      "sample": [
+        "##### TSN SPORT \u1d3f\u1d2c\u1d42 \u2076\u2070\u1da0\u1d56\u02e2 #####",
+        "CA: SPORTSN ET WORLD EXTRA 4 \u1d3f\u1d2c\u1d42"
+      ]
+    },
+    "UK| NEWS \u02b0\u1d49\u1d5b\u1d9c": {
+      "count": 2,
+      "sample": [
+        "### UK NEWS HEVC/HD ###",
+        "### UK NEWS HEVC/4K ###"
+      ]
+    },
+    "UK| TNT SPORT \u1d34\u1d30 \u2c7d\u1d35\u1d3e": {
+      "count": 2,
+      "sample": [
+        "####### TNT SPORT \u1d34\u1d30 #######",
+        "####### TNT SPORT \u1d34\u1d30 \u02b0\u1d49\u1d5b\u1d9c #######"
+      ]
+    },
+    "UK| ESPN+ PPV": {
+      "count": 2,
+      "sample": [
+        "##### UK ESPN+ PPV #####",
+        "UK: ESPN PLUS 110 PPV"
+      ]
+    },
+    "IE| IRELAND HD/4K": {
+      "count": 2,
+      "sample": [
+        "##### IRELAND  #####",
+        "IRL: VIRGIN MEDIA FOUR 4K \u25c9"
+      ]
+    },
+    "CA| DOCUMENTARY EN": {
+      "count": 1,
+      "sample": [
+        "CA EN: H2 HD"
+      ]
+    },
+    "UK| DOCUMENTARY \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 1,
+      "sample": [
+        "#### DOCUMENTARY HD/4K ####"
+      ]
+    },
+    "UK| NOW TV SPORT \u1d34\u1d30/\u1d3f\u1d2c\u1d42": {
+      "count": 1,
+      "sample": [
+        "## NOW TV SPORT \u1d34\u1d30/\u1d3f\u1d2c\u1d42 ##"
+      ]
+    }
+  }
+}
