@@ -48,6 +48,10 @@ COUNTRY_PREFIX_RE = re.compile(
 NOISE = {"hd", "fhd", "uhd", "sd", "4k", "8k", "hevc", "h265", "h264", "raw",
          "backup", "vip", "hq", "lq", "50fps", "60fps", "1080p", "720p", "tv"}
 COUNTRY_ALIASES = {"usa": "us", "uk": "gb", "can": "ca"}
+# short forms used by public guides ("SkySp.Fball", "Cartoon.Netwrk", "Disney.Jr")
+ABBREV = {"sp": "sports", "fball": "football", "netwrk": "network", "net": "network",
+          "disc": "discovery", "jr": "junior", "inv": "investigation", "plnt": "planet",
+          "ev": "event", "sci": "science", "ent": "entertainment"}
 
 
 def log(*a):
@@ -73,12 +77,19 @@ def norm_name(s: str) -> str:
     """'US| ESPN ᴴᴰ' -> 'espn'; 'A&E.us' -> 'a and e'."""
     s = unicodedata.normalize("NFKC", s)
     s = COUNTRY_PREFIX_RE.sub("", s)
-    s = re.sub(r"\.(us|uk|gb|ca)$", "", s, flags=re.I)
+    s = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", s)          # SkySpMainEv -> Sky Sp Main Ev
+    s = re.sub(r"\.(us|uk|gb|ca)\d*$", "", s, flags=re.I)
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     s = s.replace("&", " and ").replace("+", " plus ")
     s = re.sub(r"[\[(].*?[\])]", " ", s)
-    words = [w for w in re.split(r"[^a-z0-9]+", s) if w and w not in NOISE]
+    words = [ABBREV.get(w, w) for w in re.split(r"[^a-z0-9]+", s) if w and w not in NOISE]
+    if words[:2] == ["u", "and"] and len(words) > 2:   # UKTV: "U&Dave" -> "dave"
+        words = words[2:]
     return " ".join(words)
+
+
+def name_key(s: str) -> str:
+    return norm_name(s).replace(" ", "")
 
 
 def norm_id(s: str) -> str:
@@ -163,6 +174,7 @@ def read_m3u(path: Path) -> tuple[dict[str, dict], int, str | None]:
                     name = pending.get("tvg-name") or pending["_title"]
                     if not tid:
                         without_id += 1
+                        note_no_id(pending.get("group-title", ""), name)
                     else:
                         ch = channels.setdefault(tid, {"names": [], "logo": None,
                                                        "countries": set()})
@@ -187,6 +199,16 @@ def xtream_login(m3u_url: str):
         return None
     base = f"{u.scheme}://{u.netloc}{u.path[:-len('get.php')]}"
     return base, {"username": q["username"][0], "password": q["password"][0]}
+
+
+NO_ID: dict[str, dict] = {}   # category -> {"count": n, "sample": [names]}
+
+
+def note_no_id(category: str, name: str):
+    c = NO_ID.setdefault(category or "(none)", {"count": 0, "sample": []})
+    c["count"] += 1
+    if len(c["sample"]) < 4:
+        c["sample"].append(name)
 
 
 def read_player_api(m3u_url: str, tmp: Path) -> tuple[dict[str, dict], int]:
@@ -225,6 +247,7 @@ def read_player_api(m3u_url: str, tmp: Path) -> tuple[dict[str, dict], int]:
         name = st.get("name") or ""
         if not tid:
             without_id += 1
+            note_no_id(cats.get(str(st.get("category_id")), ""), name)
             continue
         ch = channels.setdefault(tid, {"names": [], "logo": None, "countries": set()})
         if name and name not in ch["names"]:
@@ -328,28 +351,40 @@ def match_index(gaps: dict[str, dict], src_country: str | None):
         if ch["countries"] and src_country and src_country not in ch["countries"]:
             continue  # don't match a UK channel's name against a US guide
         for n in ch["names"] + [cid]:
-            key = norm_name(n)
+            key = name_key(n)
             if key:
                 by_name.setdefault(key, cid)
-                if key.endswith(" east"):
-                    by_name.setdefault(key[:-5], cid)
+                if key.endswith("east"):
+                    by_name.setdefault(key[:-4], cid)
     return by_id, by_name
 
 
+def load_aliases() -> dict[str, str]:
+    """aliases.json: {"our tvg-id": "public guide channel id"} for renamed channels."""
+    p = HERE / "aliases.json"
+    if not p.exists():
+        return {}
+    return {norm_id(k): v for k, v in json.loads(p.read_text()).items() if not k.startswith("_")}
+
+
 def take_public(path: Path, src_country: str | None, gaps: dict[str, dict],
-                spool: Spool, lo, hi) -> dict[str, str]:
+                spool: Spool, lo, hi, stats: dict) -> dict[str, str]:
     """Fill gaps from one public guide. Returns {our id: their id}."""
     by_id, by_name = match_index(gaps, src_country)
+    aliases = load_aliases()
+    by_alias = {norm_id(theirs): c for c in gaps for k, theirs in aliases.items()
+                if k == norm_id(c)}
     mapping: dict[str, str] = {}   # their id -> our id
     used: set[str] = set()
     seen = set()
+    stats["all"] = {}
     for tag, el in iter_xmltv(path):
         if tag == "channel":
             theirs = el.get("id") or ""
-            ours = by_id.get(norm_id(theirs))
+            ours = by_alias.get(norm_id(theirs)) or by_id.get(norm_id(theirs))
             if not ours:
                 for dn in [theirs] + [d.text or "" for d in el.findall("display-name")]:
-                    ours = by_name.get(norm_name(dn))
+                    ours = by_name.get(name_key(dn))
                     if ours:
                         break
             if ours and ours not in used:
@@ -359,6 +394,7 @@ def take_public(path: Path, src_country: str | None, gaps: dict[str, dict],
             ours = mapping.get(el.get("channel") or "")
             if not ours:
                 continue
+            stats["all"][ours] = stats["all"].get(ours, 0) + 1
             stop = in_window(el, lo, hi)
             if stop is None or (ours, el.get("start")) in seen:
                 continue
@@ -468,11 +504,14 @@ def main(argv=None) -> int:
             log(f"Public guide: {s['name']}")
             spool = Spool(tmp / f"src{i}.spool")
             try:
+                stats: dict = {}
                 got = take_public(fetch_to_file(s["url"], tmp / f"src{i}.xml", s["name"]),
-                                  country(s.get("country")), gaps, spool, lo, hi)
+                                  country(s.get("country")), gaps, spool, lo, hi, stats)
+                empty = {o: f"{t} ({stats['all'].get(o, 0)} programmes, none in window)"
+                         for o, t in got.items() if not spool.count.get(o)}
             except (RuntimeError, etree.XMLSyntaxError) as e:
                 log(f"  ! skipped: {e}")
-                got = {}
+                got, empty = {}, {}
             spool.close()
             ids = {c for c in got if spool.count.get(c)}
             for c in ids:
@@ -481,7 +520,9 @@ def main(argv=None) -> int:
             (tmp / f"src{i}.xml").unlink(missing_ok=True)
             parts.append((spool, ids))
             log(f"  filled {len(ids)}")
-            report["sources"].append({"name": s["name"], "filled": len(ids)})
+            report["sources"].append({"name": s["name"], "filled": len(ids),
+                                      "filled_ids": {o: got[o] for o in sorted(ids)},
+                                      "matched_but_empty": empty})
 
         # provider programmes for every channel it has, unless a public guide replaced it
         parts.insert(0, (prov, {c for c in prov.count if c not in filled}))
@@ -491,7 +532,9 @@ def main(argv=None) -> int:
 
         report.update(channels_in_guide=len(kept), channels_without_guide=len(gaps),
                       programmes=total, gz_mb=round(gz.stat().st_size / 1e6, 1),
-                      missing_sample=sorted(gaps)[:200])
+                      missing_sample=sorted(gaps)[:200],
+                      no_tvg_id_by_category=dict(sorted(NO_ID.items(),
+                                                        key=lambda kv: -kv[1]["count"])))
         log(f"Guide: {len(kept)} channels, {total} programmes, {report['gz_mb']} MB")
 
         if gz.stat().st_size > MAX_GZ_BYTES:

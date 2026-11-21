@@ -75,3 +75,14 @@ def test_guide_url_from_m3u_login():
 def test_names():
     assert build.norm_name("US| ESPN ᴴᴰ") == "espn"
     assert build.norm_name("A&E.us") == "a and e"
+
+
+def test_public_short_forms_match():
+    pairs = [("skysportsfootball.uk", "SkySp.Fball.HD.uk"),
+             ("skysportsmainevent.uk", "SkySpMainEvHD.uk"),
+             ("Dave.uk", "U.and.Dave.HD.uk"),
+             ("DisneyJunior.uk", "Disney.Jr.HD.uk"),
+             ("FoxBusiness.us", "Fox.Business.HD.us2")]
+    for ours, theirs in pairs:
+        assert build.name_key(ours) == build.name_key(theirs)
+    assert build.name_key("NBCSports.us") != build.name_key("NBC.Sports.HD.1.us2")

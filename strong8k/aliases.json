@@ -1,0 +1,32 @@
+{
+  "_": "Renamed channels: our tvg-id -> channel id in a public guide (sources.json).",
+
+  "CBSReality.uk": "CBS.Justice.uk",
+  "CrimeInvestigation.uk": "Crime+Inv.HD.uk",
+  "SkyCinemaPremiere.uk": "SkyPremiereHD.uk",
+  "SkyCinemaThriller.uk": "Sky.Thriller.HD.uk",
+  "SkyCinemaSciFiHorror.uk": "Sky.ScFi/HorHD.uk",
+  "SkyCinemaFamily.uk": "Sky.Family.HD.uk",
+  "skysportspremiereleague.uk": "SkySp.PL.HD.uk",
+  "skysports1uhd.uk": "Sky.Sports.Ultra.HD.1.uk",
+  "skysports2uhd.uk": "Sky.Sports.Ultra.HD.2.uk",
+  "ViaplaySports1.uk": "Premier.Sports.1.HD.uk",
+  "ViaplaySports2.uk": "Premier.Sports.2.HD.uk",
+  "bbc1.uk": "BBC.One.Lon.HD.uk",
+  "AlJazeera.qa": "Al.Jazeera.HD.uk",
+  "SkyNewsArabia.sa": "SkyNewsArabia.uk",
+  "Euronews.us": "Euronews.uk",
+
+  "epix.us": "MGM+.HD.us2",
+  "EpixHits.us": "MGM+.Hits.HD.us2",
+  "epixdrivein.us": "MGM+.Drive-In.us2",
+  "showtimewest.us": "Paramount+.with.Showtime.HD.(Pacific).us2",
+  "HallmarkDrama.us": "Hallmark.Family.us2",
+  "CheddarBusiness.us": "Cheddar.us2",
+  "WWE.us": "WWE.Network.us2",
+  "ATTSportsNetPittsburgh.us": "SportsNet.Pittsburgh.HD.us2",
+  "ATTSportsNetHouston.us": "Space.City.Home.Network.HD.us2",
+  "MadisonSquareGarden.us": "MSG.National.us2",
+  "MadisonSquareGarden2.us": "MSG2.HD.us2",
+  "NewEnglandSportsNetworkPlus.us": "NESN+.New.England.Sports.Network.Plus.us2"
+}
